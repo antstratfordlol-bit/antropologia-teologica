@@ -130,7 +130,7 @@
   <div id="scroll-progress-bar" class="fixed top-0 left-0 h-1 bg-indigo-500 z-50 transition-all duration-75" style="width: 0%"></div>
 
   <!-- MAIN TOP NAVBAR -->
-  <header class="sticky top-0 z-40 bg-[var(--reader-surface)]/95 backdrop-blur-md border-b border-[var(--reader-border)] px-4 lg:px-8 py-3 flex items-center justify-between shadow-sm">
+  <header id="main-header" class="sticky top-0 z-40 bg-[var(--reader-surface)]/95 backdrop-blur-md border-b border-[var(--reader-border)] px-4 lg:px-8 py-3 flex items-center justify-between shadow-sm transition-all duration-200">
     <div class="flex items-center space-x-3">
       <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-600 to-violet-700 flex items-center justify-center text-white font-bold text-lg shadow-md shadow-indigo-500/20">
         9E
@@ -183,7 +183,7 @@
   </header>
 
   <!-- MOBILE NAV -->
-  <div class="md:hidden flex items-center justify-around bg-[var(--reader-surface)] border-b border-[var(--reader-border)] px-2 py-2 text-xs">
+  <div id="mobile-nav" class="md:hidden flex items-center justify-around bg-[var(--reader-surface)] border-b border-[var(--reader-border)] px-2 py-2 text-xs">
     <button onclick="switchTab('reader')" class="px-2 py-1 font-semibold text-indigo-600 dark:text-indigo-400">Manual</button>
     <button onclick="switchTab('lectures')" class="px-2 py-1 text-[var(--reader-muted)]">Lectures</button>
     <button onclick="switchTab('sources')" class="px-2 py-1 text-[var(--reader-muted)]">Sources</button>
@@ -225,8 +225,8 @@
         <div class="sticky top-0 z-20 bg-[var(--reader-surface)]/95 backdrop-blur-md border-b border-[var(--reader-border)] px-6 py-2.5 flex items-center justify-between">
           
           <div class="flex items-center space-x-3 truncate">
-            <!-- Focus / Zen Mode Button (Collapse Sidebar) -->
-            <button onclick="toggleSidebar()" class="p-1.5 px-2.5 rounded-lg border border-[var(--reader-border)] bg-[var(--reader-bg)] hover:bg-[var(--reader-surface)] text-xs font-semibold flex items-center space-x-1" title="Toggle Sidebar (Focus Mode)">
+            <!-- Focus / Zen Mode Button (Collapse Sidebar & Top Navbar) -->
+            <button onclick="toggleSidebar()" id="btn-focus-mode" class="p-1.5 px-2.5 rounded-lg border border-[var(--reader-border)] bg-[var(--reader-bg)] hover:bg-[var(--reader-surface)] text-xs font-semibold flex items-center space-x-1.5 transition shadow-sm" title="Toggle Distraction-Free Focus Mode (Hides header & sidebar) [Esc]">
               <span id="sidebar-toggle-icon">◨</span>
               <span class="hidden sm:inline" id="sidebar-toggle-text">Focus</span>
             </button>
@@ -239,7 +239,7 @@
             </h2>
           </div>
 
-          <!-- Reading Controls: Font, Size, Read Checkbox -->
+          <!-- Reading Controls: Font, Size, Theme, Read Checkbox -->
           <div class="flex items-center space-x-2 flex-shrink-0">
             <!-- Reading Time & Word Count -->
             <span id="reading-meta-badge" class="hidden lg:inline text-xs text-[var(--reader-muted)] font-mono">
@@ -257,6 +257,15 @@
             <button onclick="changeFontSize(-1)" class="p-1 px-2 text-xs rounded bg-[var(--reader-bg)] border border-[var(--reader-border)] hover:bg-[var(--reader-surface)]">A-</button>
             <span id="font-size-label" class="text-xs font-mono text-[var(--reader-muted)] w-8 text-center">18</span>
             <button onclick="changeFontSize(1)" class="p-1 px-2 text-xs rounded bg-[var(--reader-bg)] border border-[var(--reader-border)] hover:bg-[var(--reader-surface)]">A+</button>
+
+            <div class="h-4 w-px bg-[var(--reader-border)] mx-1"></div>
+
+            <!-- Compact Theme Toggle (Accessible in Focus Mode) -->
+            <div class="flex items-center bg-[var(--reader-bg)] border border-[var(--reader-border)] rounded-lg p-0.5 text-xs">
+              <button onclick="setTheme('light')" class="p-1 px-1.5 rounded hover:bg-[var(--reader-surface)] transition" title="Light Theme">☀️</button>
+              <button onclick="setTheme('sepia')" class="p-1 px-1.5 rounded hover:bg-[var(--reader-surface)] transition" title="Warm Book Theme">📜</button>
+              <button onclick="setTheme('dark')" class="p-1 px-1.5 rounded hover:bg-[var(--reader-surface)] transition" title="Midnight Slate Theme">🌙</button>
+            </div>
 
             <div class="h-4 w-px bg-[var(--reader-border)] mx-1"></div>
 
@@ -578,26 +587,48 @@
         btn.classList.add('bg-indigo-600', 'text-white', 'shadow-sm');
         btn.classList.remove('text-[var(--reader-muted)]');
       }
+
+      // If user switches away while in focus mode, restore header navigation
+      if (!sidebarOpen && tabId !== 'reader') {
+        toggleSidebar();
+      }
     }
 
     // ==========================================
-    // SIDEBAR TOGGLE (FOCUS / ZEN MODE)
+    // SIDEBAR & DISTRACTION-FREE FOCUS / ZEN MODE
     // ==========================================
     function toggleSidebar() {
       sidebarOpen = !sidebarOpen;
       const sb = document.getElementById('reader-sidebar');
+      const header = document.getElementById('main-header');
+      const mobileNav = document.getElementById('mobile-nav');
       const text = document.getElementById('sidebar-toggle-text');
       const icon = document.getElementById('sidebar-toggle-icon');
+      const btn = document.getElementById('btn-focus-mode');
+
       if (sidebarOpen) {
-        sb.classList.remove('hidden');
+        sb?.classList.remove('hidden');
+        header?.classList.remove('hidden');
+        mobileNav?.classList.remove('hidden');
         if (text) text.textContent = "Focus";
         if (icon) icon.textContent = "◨";
+        if (btn) btn.title = "Toggle Distraction-Free Focus Mode (Hides header & sidebar) [Esc]";
       } else {
-        sb.classList.add('hidden');
-        if (text) text.textContent = "Show Index";
-        if (icon) icon.textContent = "▥";
+        sb?.classList.add('hidden');
+        header?.classList.add('hidden');
+        mobileNav?.classList.add('hidden');
+        if (text) text.textContent = "Exit Focus";
+        if (icon) icon.textContent = "✕";
+        if (btn) btn.title = "Exit Focus Mode (Show header & sidebar) [Esc]";
       }
     }
+
+    // Keyboard shortcut: Esc to exit focus mode
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !sidebarOpen) {
+        toggleSidebar();
+      }
+    });
 
     // ==========================================
     // FONT ADJUSTERS
