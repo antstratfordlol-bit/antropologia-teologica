@@ -196,13 +196,16 @@
     <!-- MAIN NAV TABS -->
     <nav class="hidden md:flex items-center space-x-1 bg-[var(--reader-bg)] p-1 rounded-xl border border-[var(--reader-border)]">
       <button onclick="switchTab('reader')" id="nav-btn-reader" class="nav-tab px-3.5 py-1.5 rounded-lg text-xs font-semibold transition bg-indigo-600 text-white shadow-sm">
-        📖 Manual (40 Capp)
+        📖 Manual (40)
       </button>
       <button onclick="switchTab('lectures')" id="nav-btn-lectures" class="nav-tab px-3.5 py-1.5 rounded-lg text-xs font-semibold transition text-[var(--reader-muted)] hover:text-[var(--reader-heading)]">
-        🎙️ Lectures & Master Notes
+        🎙️ Lectures
+      </button>
+      <button onclick="switchTab('exam')" id="nav-btn-exam" class="nav-tab px-3.5 py-1.5 rounded-lg text-xs font-semibold transition text-amber-600 dark:text-amber-400 hover:text-amber-700">
+        🎯 Esame & Practice
       </button>
       <button onclick="switchTab('sources')" id="nav-btn-sources" class="nav-tab px-3.5 py-1.5 rounded-lg text-xs font-semibold transition text-[var(--reader-muted)] hover:text-[var(--reader-heading)]">
-        📚 Sources & Anki Deck
+        📚 Sources & Anki
       </button>
       <button onclick="switchTab('bridge')" id="nav-btn-bridge" class="nav-tab px-3.5 py-1.5 rounded-lg text-xs font-semibold transition text-emerald-600 dark:text-emerald-400 hover:text-emerald-700">
         <span>⚡ Antigravity Pair</span>
@@ -211,7 +214,7 @@
 
     <!-- RIGHT CONTROLS: THEME & EXAM COUNTDOWN -->
     <div class="flex items-center space-x-2.5">
-      <div class="hidden xl:flex items-center space-x-2 text-xs bg-amber-500/10 text-amber-700 dark:text-amber-300 px-3 py-1.5 rounded-lg border border-amber-500/20">
+      <div onclick="switchTab('exam')" class="hidden xl:flex items-center space-x-2 text-xs bg-amber-500/10 text-amber-700 dark:text-amber-300 px-3 py-1.5 rounded-lg border border-amber-500/20 cursor-pointer hover:bg-amber-500/20 transition" title="Apri Hub Esame & Simulazioni">
         <span class="inline-block w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
         <span class="font-medium">Parziale: 11 Dic 2026</span>
       </div>
@@ -229,6 +232,7 @@
   <div id="mobile-nav" class="md:hidden flex items-center justify-around bg-[var(--reader-surface)] border-b border-[var(--reader-border)] px-2 py-2 text-xs">
     <button onclick="switchTab('reader')" class="px-2 py-1 font-semibold text-indigo-600 dark:text-indigo-400">Manual</button>
     <button onclick="switchTab('lectures')" class="px-2 py-1 text-[var(--reader-muted)]">Lectures</button>
+    <button onclick="switchTab('exam')" class="px-2 py-1 text-amber-600 dark:text-amber-400 font-semibold">🎯 Esame</button>
     <button onclick="switchTab('sources')" class="px-2 py-1 text-[var(--reader-muted)]">Sources</button>
     <button onclick="switchTab('bridge')" class="px-2 py-1 text-emerald-600 dark:text-emerald-400 font-semibold">⚡ Pair</button>
   </div>
@@ -407,9 +411,537 @@
     </section>
 
     <!-- ========================================================================= -->
-    <!-- TAB 3: 📚 SOURCES & ANKI DECK HUB                                         -->
+    <!-- TAB: 🎯 ESAME & PRACTICE QUESTIONS                                         -->
+    <!-- ========================================================================= -->
+    <section id="tab-exam" class="tab-content hidden flex-1 overflow-y-auto p-6 lg:p-10">
+      <div class="max-w-4xl mx-auto space-y-10">
+
+        <!-- Header & Top Action -->
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-[var(--reader-border)]">
+          <div>
+            <div class="flex items-center space-x-2 text-xs font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400 mb-1">
+              <span>🏛️ Pontificia Università della Santa Croce</span>
+              <span>•</span>
+              <span>STB Anno III</span>
+            </div>
+            <h2 class="text-2xl md:text-3xl font-extrabold text-[var(--reader-heading)] tracking-tight">
+              Struttura dell'Esame & Practice Hub
+            </h2>
+            <p class="text-sm text-[var(--reader-muted)] mt-1">
+              9E44 Antropologia Teologica • Prof.ssa Catalina Vial de Amesti • Modalità ufficiale d'esame, criteri di valutazione, tracce simulate per i saggi e banca domande brevi.
+            </p>
+          </div>
+          <button onclick="copyExamSparringPrompt()" class="self-start md:self-auto p-2.5 px-4 rounded-xl bg-gradient-to-r from-amber-600 to-indigo-600 hover:from-amber-700 hover:to-indigo-700 text-white text-xs font-bold shadow-md transition flex items-center space-x-2 cursor-pointer hover:scale-105 active:scale-95">
+            <span>⚡ Simula Scritto con Antigravity</span>
+          </button>
+        </div>
+
+        <!-- 1. OFFICIAL EXAMINATION BLUEPRINT -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <!-- Card Parziale -->
+          <div class="p-6 rounded-2xl bg-[var(--reader-surface)] border-2 border-amber-500/50 shadow-sm relative overflow-hidden flex flex-col justify-between">
+            <div class="absolute top-0 right-0 bg-amber-500 text-slate-950 font-bold text-[10px] uppercase tracking-wider px-3 py-1 rounded-bl-lg">
+              Opzionale & Liberatorio
+            </div>
+            
+            <div class="space-y-4">
+              <div class="flex items-center space-x-3">
+                <span class="text-3xl">📋</span>
+                <div>
+                  <h3 class="text-lg font-bold text-[var(--reader-heading)]">Esame Parziale (Scritto)</h3>
+                  <span class="text-xs font-semibold text-amber-600 dark:text-amber-400">Venerdì 11 Dicembre 2026 (mattina)</span>
+                </div>
+              </div>
+
+              <div class="p-3.5 rounded-xl bg-[var(--reader-bg)] border border-[var(--reader-border)] space-y-1.5 text-xs">
+                <span class="font-bold text-[var(--reader-heading)] block">📚 Materia della Prova:</span>
+                <ul class="list-disc list-inside space-y-1 text-[var(--reader-muted)]">
+                  <li><strong class="text-[var(--reader-text)]">Parte I:</strong> Introduzione & Metodologia (Capp. 1–6)</li>
+                  <li><strong class="text-[var(--reader-text)]">Parte II:</strong> Figli di Dio nel mondo (Capp. 7–26)</li>
+                  <li><strong class="text-[var(--reader-text)]">Testi Magisteriali:</strong> <em>Gaudium et Spes</em> 22 & <em>Magnifica Humanitas</em> (Rimini 2026)</li>
+                </ul>
+              </div>
+
+              <div class="p-3.5 rounded-xl bg-[var(--reader-bg)] border border-[var(--reader-border)] space-y-1.5 text-xs">
+                <span class="font-bold text-[var(--reader-heading)] block">✍️ Formato & Articolazione:</span>
+                <ul class="list-disc list-inside space-y-1 text-[var(--reader-muted)]">
+                  <li><strong>2 saggi teologici estesi</strong> da redigere a scelta tra <strong>3 temi generali proposti</strong> (2–3 facciate di foglio protocollo per ciascun saggio).</li>
+                  <li><strong>Brevi domande puntuali</strong> (definizioni dogmatiche, radici bibliche, distinzioni conciliari e tomiste).</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mt-4 text-[11px] text-amber-700 dark:text-amber-300 font-medium bg-amber-500/10 p-2.5 rounded-lg border border-amber-500/20">
+              💡 <em>Effetto Liberatorio:</em> Superando questo scritto con esito positivo, le Parti I e II sono interamente liberate. All'appello finale si sosterrà soltanto la Parte III.
+            </div>
+          </div>
+
+          <!-- Card Finale -->
+          <div class="p-6 rounded-2xl bg-[var(--reader-surface)] border border-[var(--reader-border)] shadow-sm relative overflow-hidden flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex items-center space-x-3">
+                <span class="text-3xl">🎓</span>
+                <div>
+                  <h3 class="text-lg font-bold text-[var(--reader-heading)]">Esame Finale (Scritto)</h3>
+                  <span class="text-xs font-semibold text-indigo-600 dark:text-indigo-400">Sessione Invernale (Gennaio–Febbraio 2027)</span>
+                </div>
+              </div>
+
+              <div class="p-3.5 rounded-xl bg-[var(--reader-bg)] border border-[var(--reader-border)] space-y-1.5 text-xs">
+                <span class="font-bold text-[var(--reader-heading)] block">📚 Materia (per chi ha superato il Parziale):</span>
+                <ul class="list-disc list-inside space-y-1 text-[var(--reader-muted)]">
+                  <li><strong class="text-[var(--reader-text)]">Parte III:</strong> L’antropologia cristiana (Capp. 27–40)</li>
+                  <li><strong>Trattati tematici:</strong> Il naturale e il soprannaturale, unità hylomorfica anima-corpo, libertà e grazia, storicità, maschio e femmina, teologia del lavoro, la nozione di persona.</li>
+                </ul>
+              </div>
+
+              <div class="p-3.5 rounded-xl bg-[var(--reader-bg)] border border-[var(--reader-border)] space-y-1.5 text-xs">
+                <span class="font-bold text-[var(--reader-heading)] block">✍️ Formato:</span>
+                <p class="text-[var(--reader-muted)] leading-relaxed">
+                  Stesso identico schema del parziale: stesura di <strong>2 saggi</strong> a scelta tra 3 temi generali (2–3 facciate ciascuno) + <strong>domande brevi</strong>.
+                </p>
+                <p class="text-[11px] text-[var(--reader-muted)] mt-1 italic">
+                  *Nota: Chi non sostiene o non supera il parziale deve portare l'intero programma (Capp. 1–40).
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-4 text-[11px] text-indigo-700 dark:text-indigo-300 font-medium bg-indigo-500/10 p-2.5 rounded-lg border border-indigo-500/20">
+              🎯 <em>Strategia di Successo:</em> Concentrare lo sforzo su Parte I e II entro l'11 Dicembre garantisce una preparazione serena e approfondita sulla metafisica della persona a Gennaio.
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. RUBRICA ACCADEMICA PUSC PER IL SAGGIO DA 30 E LODE -->
+        <div class="p-6 rounded-2xl bg-[var(--reader-surface)] border border-[var(--reader-border)] space-y-4">
+          <div class="flex items-center space-x-2">
+            <span class="text-xl">🏆</span>
+            <h3 class="text-base font-bold text-[var(--reader-heading)]">
+              Rubrica Accademica PUSC: I 5 Momenti Chiave di un Saggio Teologico Esemplare
+            </h3>
+          </div>
+          <p class="text-xs text-[var(--reader-muted)] leading-relaxed">
+            Nelle 2–3 facciate richieste per ciascun saggio, il docente valuta la padronanza metodologica e l'integrazione tra fonti bibliche, sviluppo storico-dogmatico e speculazione metafisica:
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-5 gap-3 text-xs">
+            <div class="p-3 rounded-xl bg-[var(--reader-bg)] border border-[var(--reader-border)] space-y-1">
+              <span class="font-bold text-amber-600 dark:text-amber-400 block">1. Status Quaestionis</span>
+              <p class="text-[var(--reader-muted)] leading-relaxed">Inquadrare il nodo antropologico e definire chiaramente la tesi centrale nelle prime righe.</p>
+            </div>
+            <div class="p-3 rounded-xl bg-[var(--reader-bg)] border border-[var(--reader-border)] space-y-1">
+              <span class="font-bold text-amber-600 dark:text-amber-400 block">2. Radice Biblica</span>
+              <p class="text-[var(--reader-muted)] leading-relaxed">Fornire i riferimenti scritturistici puntuali (*Gen* 1–2, *Salmi*, *Sap*, *Gv*, *Rm*, *Gal*).</p>
+            </div>
+            <div class="p-3 rounded-xl bg-[var(--reader-bg)] border border-[var(--reader-border)] space-y-1">
+              <span class="font-bold text-amber-600 dark:text-amber-400 block">3. Svolta Patristica</span>
+              <p class="text-[var(--reader-muted)] leading-relaxed">Citare le tappe conciliari e i Padri (Ireneo, Tertulliano, Agostino, *Trento*, *Orange II*).</p>
+            </div>
+            <div class="p-3 rounded-xl bg-[var(--reader-bg)] border border-[var(--reader-border)] space-y-1">
+              <span class="font-bold text-amber-600 dark:text-amber-400 block">4. Rigore Tomista</span>
+              <p class="text-[var(--reader-muted)] leading-relaxed">Articolare la dottrina con distinzioni metafisiche (*habitus entitativus*, *gratia elevans*, causalità).</p>
+            </div>
+            <div class="p-3 rounded-xl bg-[var(--reader-bg)] border border-[var(--reader-border)] space-y-1">
+              <span class="font-bold text-amber-600 dark:text-amber-400 block">5. Sintesi in Cristo</span>
+              <p class="text-[var(--reader-muted)] leading-relaxed">Concludere con *GS* 22 e l'orizzonte della dignità inalienabile (*Dignitas Infinita*).</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. SIMULAZIONE PARZIALE: TRACCE GENERALI (SAGGI ESTESI) -->
+        <div class="space-y-4">
+          <div class="flex items-center justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-[var(--reader-heading)]">
+                📝 Tracce Simulate per i Saggi Estesi (Esame Parziale: Capp. 1–26)
+              </h3>
+              <p class="text-xs text-[var(--reader-muted)]">
+                Ipotesi verosimili di tracce d'esame. Clicca su ciascun tema per aprire lo schema logico di svolgimento, le fonti magisteriali e i passi biblici consigliati.
+              </p>
+            </div>
+            <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-amber-500/10 text-amber-700 dark:text-amber-300 border border-amber-500/20">
+              4 Tracce Modello
+            </span>
+          </div>
+
+          <!-- Essay Topics Group -->
+          <div class="space-y-3">
+            
+            <!-- TEMA 1 -->
+            <div class="p-4 rounded-xl bg-[var(--reader-surface)] border border-[var(--reader-border)] space-y-3">
+              <div class="flex items-start justify-between cursor-pointer" onclick="toggleExamAccordion('tema-1')">
+                <div class="space-y-1 pr-4">
+                  <span class="text-[11px] font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400">
+                    Traccia 1 • Protologia, Imago Dei & Compimento Cristologico
+                  </span>
+                  <h4 class="text-sm md:text-base font-bold text-[var(--reader-heading)] leading-snug">
+                    «L'uomo creato a immagine e somiglianza di Dio (<em>Gen</em> 1:26–28) e il suo pieno compimento nel mistero del Verbo incarnato (<em>Gaudium et Spes</em> 22). Si illustri il fondamento biblico, la distinzione patristica (Ireneo e Tertulliano) e il confronto con le riduzioni contemporanee.»
+                  </h4>
+                </div>
+                <button class="p-1.5 rounded-lg bg-[var(--reader-bg)] border border-[var(--reader-border)] text-xs font-bold text-[var(--reader-muted)]" id="tema-1-icon">▼</button>
+              </div>
+
+              <div id="tema-1" class="hidden pt-3 border-t border-[var(--reader-border)] space-y-3 text-xs text-[var(--reader-text)]">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  <div class="p-3 rounded-lg bg-[var(--reader-bg)] border border-[var(--reader-border)] space-y-1">
+                    <strong class="text-amber-600 dark:text-amber-400 block">📖 Fonti Bibliche & Magisteriali:</strong>
+                    <ul class="list-disc list-inside space-y-0.5 text-[var(--reader-muted)]">
+                      <li><em>Genesi</em> 1:26–28 (termini <em>tzelem</em> e <em>demuth</em>; <em>bara</em> vs. <em>asah</em>)</li>
+                      <li><em>Salmo</em> 8 (poco inferiore agli angeli, coronato di gloria)</li>
+                      <li><em>Sapienza</em> 2:23 (creato per l'incorruttibilità)</li>
+                      <li><em>Colossesi</em> 1:15 & <em>Romani</em> 8:29 (Cristo icona del Dio invisibile)</li>
+                      <li><em>Gaudium et Spes</em> 22 (<em>«Christus novissimus Adam... hominem ipsi homini plene manifestat»</em>)</li>
+                      <li>DDF, <em>Dignitas Infinita</em> (2024, §§ 1–16, dignità ontologica)</li>
+                    </ul>
+                  </div>
+                  <div class="p-3 rounded-lg bg-[var(--reader-bg)] border border-[var(--reader-border)] space-y-1">
+                    <strong class="text-indigo-600 dark:text-indigo-400 block">💡 Schema Consigliato di Svolgimento:</strong>
+                    <ol class="list-decimal list-inside space-y-1 text-[var(--reader-muted)]">
+                      <li><strong>Esegesi di Gen 1:</strong> Contrasto con i miti mesopotamici (<em>Enuma Elish</em>). L'uomo non è uno schiavo ma luogotenente e interlocutore di Dio.</li>
+                      <li><strong>Patristica:</strong> Ireneo (*eikōn* come struttura razionale corporea vs. *homoiōsis* come somiglianza pneumatica filiale). Tertulliano: l'uomo è plasmato guardando al Cristo futuro (*Christus cogitabatur homo futurus*).</li>
+                      <li><strong>Sintesi GS 22:</strong> Cristo non è un mero modello esteriore ma la causa esemplare e finale: solo incarnandosi il Figlio svela la vocazione dell'uomo alla filiazione.</li>
+                      <li><strong>Critica culturale:</strong> Risposta alle riduzioni contemporanee (transumanesimo, funzionalismo) riaffermando la dignità ontologica inalienabile.</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- TEMA 2 -->
+            <div class="p-4 rounded-xl bg-[var(--reader-surface)] border border-[var(--reader-border)] space-y-3">
+              <div class="flex items-start justify-between cursor-pointer" onclick="toggleExamAccordion('tema-2')">
+                <div class="space-y-1 pr-4">
+                  <span class="text-[11px] font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400">
+                    Traccia 2 • Grazia, Filiazione Divina & Orizzonte Neotestamentario
+                  </span>
+                  <h4 class="text-sm md:text-base font-bold text-[var(--reader-heading)] leading-snug">
+                    «La nuova creatura in Cristo: filiazione divina (<em>huiothesia</em>) e vita eterna (<em>zoē aiōnios</em>) negli scritti di San Paolo e San Giovanni. Si approfondisca la dottrina della grazia come trasformazione ontologica (<em>habitus entitativus</em>) in contrasto con l'antropologia di Sisifo e del Pelagianesimo.»
+                  </h4>
+                </div>
+                <button class="p-1.5 rounded-lg bg-[var(--reader-bg)] border border-[var(--reader-border)] text-xs font-bold text-[var(--reader-muted)]" id="tema-2-icon">▼</button>
+              </div>
+
+              <div id="tema-2" class="hidden pt-3 border-t border-[var(--reader-border)] space-y-3 text-xs text-[var(--reader-text)]">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  <div class="p-3 rounded-lg bg-[var(--reader-bg)] border border-[var(--reader-border)] space-y-1">
+                    <strong class="text-amber-600 dark:text-amber-400 block">📖 Fonti Bibliche & Magisteriali:</strong>
+                    <ul class="list-disc list-inside space-y-0.5 text-[var(--reader-muted)]">
+                      <li><em>Galati</em> 4:4–7 & <em>Romani</em> 8:14–17 (lo Spirito grida <em>Abbà, Padre!</em>)</li>
+                      <li><em>2 Corinzi</em> 5:17 (se uno è in Cristo, è una nuova creatura)</li>
+                      <li><em>Giovanni</em> 3:3–8 (la rinascita dall'alto per acqua e Spirito)</li>
+                      <li><em>2 Pietro</em> 1:4 (partecipi della natura divina: <em>consortes divinae naturae</em>)</li>
+                      <li>Concilio di Cartagine (418) & Concilio di Orange II (529, <em>gratia praeveniens</em>)</li>
+                      <li>San Tommaso d'Aquino, <em>Summa Theologiae</em>, I-II q. 110, a. 2 (*habitus entitativus*)</li>
+                    </ul>
+                  </div>
+                  <div class="p-3 rounded-lg bg-[var(--reader-bg)] border border-[var(--reader-border)] space-y-1">
+                    <strong class="text-indigo-600 dark:text-indigo-400 block">💡 Schema Consigliato di Svolgimento:</strong>
+                    <ol class="list-decimal list-inside space-y-1 text-[var(--reader-muted)]">
+                      <li><strong>Il paradosso di Sisifo:</strong> La tragica condanna all'autorealizzazione chiusa e solitaria vs. la gratuità della grazia cristiana (*Deus semper antevenit*).</li>
+                      <li><strong>Paolo e Giovanni:</strong> La filiazione non è una finzione legale ma una rigenerazione reale dello Spirito Santo che introduce nell'intimità trinitaria.</li>
+                      <li><strong>Metafisica tomista della grazia:</strong> La grazia non è una sostanza né una mera virtù operativa, ma un *habitus entitativus* inerente all'essenza dell'anima (*gratia gratum faciens*).</li>
+                      <li><strong>Confutazione del Pelagianesimo:</strong> La grazia non è il premio della virtù naturale, ma il principio sovrannaturale interiore che risana (*sanans*) ed eleva (*elevans*).</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- TEMA 3 -->
+            <div class="p-4 rounded-xl bg-[var(--reader-surface)] border border-[var(--reader-border)] space-y-3">
+              <div class="flex items-start justify-between cursor-pointer" onclick="toggleExamAccordion('tema-3')">
+                <div class="space-y-1 pr-4">
+                  <span class="text-[11px] font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400">
+                    Traccia 3 • Giustificazione, Merito & Libertà Umana
+                  </span>
+                  <h4 class="text-sm md:text-base font-bold text-[var(--reader-heading)] leading-snug">
+                    «La giustificazione del peccatore e la cooperazione della libertà umana: il Decreto tridentino (Sessione VI) e la sintesi tomista. Si chiariscano la causa formale della giustificazione, la dialettica tra grazia operante e cooperante, e il fondamento teologico del merito.»
+                  </h4>
+                </div>
+                <button class="p-1.5 rounded-lg bg-[var(--reader-bg)] border border-[var(--reader-border)] text-xs font-bold text-[var(--reader-muted)]" id="tema-3-icon">▼</button>
+              </div>
+
+              <div id="tema-3" class="hidden pt-3 border-t border-[var(--reader-border)] space-y-3 text-xs text-[var(--reader-text)]">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  <div class="p-3 rounded-lg bg-[var(--reader-bg)] border border-[var(--reader-border)] space-y-1">
+                    <strong class="text-amber-600 dark:text-amber-400 block">📖 Fonti Bibliche & Conciliari:</strong>
+                    <ul class="list-disc list-inside space-y-0.5 text-[var(--reader-muted)]">
+                      <li>Concilio di Trento, <em>Decretum de iustificatione</em> (Sess. VI, 1547, DH 1520–1583)</li>
+                      <li>Formula cardine: <em>«unica formalis causa est iustitia Dei, non qua ipse iustus est, sed qua nos iustos facit»</em> (DH 1529)</li>
+                      <li>Tommaso d'Aquino, <em>S.Th.</em> I-II, q. 109, a. 2; q. 111, a. 2 (<em>gratia operans et cooperans</em>)</li>
+                      <li><em>S.Th.</em> I-II, q. 114 (<em>de merito</em>: <em>meritum de condigno</em> et <em>de congruo</em>)</li>
+                    </ul>
+                  </div>
+                  <div class="p-3 rounded-lg bg-[var(--reader-bg)] border border-[var(--reader-border)] space-y-1">
+                    <strong class="text-indigo-600 dark:text-indigo-400 block">💡 Schema Consigliato di Svolgimento:</strong>
+                    <ol class="list-decimal list-inside space-y-1 text-[var(--reader-muted)]">
+                      <li><strong>La controversia con Lutero:</strong> Giustizia imputata estrinseca (*simul iustus et peccator*) vs. reale santificazione interiore e rinnovamento ontologico cattolico.</li>
+                      <li><strong>La Causa Formale:</strong> Dimostrare perché per Trento la carità infusa nello Spirito Santo è la causa formale intrinseca che rende l'uomo realmente giusto.</li>
+                      <li><strong>Libertà e Grazia:</strong> L'uomo non è un tronco inerte (contro il servo arbitrio); la *gratia praeveniens* muove il libero arbitrio a cooperare (*gratia cooperans*).</li>
+                      <li><strong>Dottrina del Merito:</strong> L'uomo merita non per debito di Dio verso la creatura, ma perché Dio ha liberamente promesso di coronare nei suoi figli i doni della propria grazia.</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- TEMA 4 -->
+            <div class="p-4 rounded-xl bg-[var(--reader-surface)] border border-[var(--reader-border)] space-y-3">
+              <div class="flex items-start justify-between cursor-pointer" onclick="toggleExamAccordion('tema-4')">
+                <div class="space-y-1 pr-4">
+                  <span class="text-[11px] font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400">
+                    Traccia 4 • Polarità Umane & la Diagnosi della Postmodernità
+                  </span>
+                  <h4 class="text-sm md:text-base font-bold text-[var(--reader-heading)] leading-snug">
+                    «La tensione costitutiva dell'essere umano tra finitudine e trascendenza: le polarità antropologiche e la loro composizione in Cristo. Si analysino la diagnosi contemporanea di Z. Bauman ("lavoratore meccanico" ed "eterno turista") e il messaggio del Magistero contemporaneo (<em>Magnifica Humanitas</em>).»
+                  </h4>
+                </div>
+                <button class="p-1.5 rounded-lg bg-[var(--reader-bg)] border border-[var(--reader-border)] text-xs font-bold text-[var(--reader-muted)]" id="tema-4-icon">▼</button>
+              </div>
+
+              <div id="tema-4" class="hidden pt-3 border-t border-[var(--reader-border)] space-y-3 text-xs text-[var(--reader-text)]">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  <div class="p-3 rounded-lg bg-[var(--reader-bg)] border border-[var(--reader-border)] space-y-1">
+                    <strong class="text-amber-600 dark:text-amber-400 block">📖 Fonti di Riferimento:</strong>
+                    <ul class="list-disc list-inside space-y-0.5 text-[var(--reader-muted)]">
+                      <li>P. O’Callaghan, <em>Theological Anthropology: A Précis</em>, Capp. 1–3 & 6</li>
+                      <li>Papa Francesco, Messaggio per il Meeting di Rimini (2026, <em>Magnifica Humanitas</em>)</li>
+                      <li>Z. Bauman, diagnosi della società liquida (*il turista e il vagabondo*)</li>
+                      <li>Agostino, <em>De Civitate Dei</em> (le due città e l'amore di sé spinto fino al disprezzo di Dio)</li>
+                    </ul>
+                  </div>
+                  <div class="p-3 rounded-lg bg-[var(--reader-bg)] border border-[var(--reader-border)] space-y-1">
+                    <strong class="text-indigo-600 dark:text-indigo-400 block">💡 Schema Consigliato di Svolgimento:</strong>
+                    <ol class="list-decimal list-inside space-y-1 text-[var(--reader-muted)]">
+                      <li><strong>Le polarità fondamentali:</strong> Anima/corpo, individuo/comunità, libertà/dipendenza ontologica dal Creatore, temporalità/eternità.</li>
+                      <li><strong>La frattura della modernità:</strong> L'esasperazione di un polo a scapito dell'altro (razionalismo vs. sensualismo; titanismo prometeico di Babele vs. disperazione di Sisifo).</li>
+                      <li><strong>L'eterno turista di Bauman:</strong> L'incapacità postmoderna di legarsi a una vocazione stabile, riducendo l'esistenza a consumo di esperienze provvisorie.</li>
+                      <li><strong>L'integrazione cristologica:</strong> Solo in Cristo crocifisso e risorto il limite e la sofferenza umana trovano compimento, riscoprendo la bellezza dell'essere creatura.</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 4. BANCA DOMANDE BREVI PUNTUALI (Q&A FLASHCARDS) -->
+        <div class="space-y-4">
+          <div class="flex items-center justify-between">
+            <div>
+              <h3 class="text-xl font-bold text-[var(--reader-heading)]">
+                ⚡ Banca Dati: Domande Brevi Puntuali (Simulazione Seconda Parte d'Esame)
+              </h3>
+              <p class="text-xs text-[var(--reader-muted)]">
+                Domande secche su definizioni teologiche, filologia biblica e formule conciliari. Clicca su ciascuna domanda per verificare la formulazione modello attesa dal docente.
+              </p>
+            </div>
+            <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-indigo-500/10 text-indigo-700 dark:text-indigo-300 border border-indigo-500/20">
+              10 Domande Puntuali
+            </span>
+          </div>
+
+          <div class="space-y-2.5">
+            
+            <!-- Q1 -->
+            <div class="p-3.5 rounded-xl bg-[var(--reader-surface)] border border-[var(--reader-border)] space-y-2">
+              <div class="flex items-center justify-between cursor-pointer" onclick="toggleExamAccordion('q-1')">
+                <span class="text-xs font-bold text-[var(--reader-heading)]">
+                  1. Qual è la distinzione esegetica e teologica tra i termini ebraici <em>tzelem</em> e <em>demuth</em> in <em>Gen</em> 1:26?
+                </span>
+                <span class="text-xs font-bold text-amber-500 ml-2" id="q-1-icon">▼</span>
+              </div>
+              <div id="q-1" class="hidden text-xs text-[var(--reader-muted)] pt-2 border-t border-[var(--reader-border)] leading-relaxed space-y-1">
+                <p>
+                  <strong>Risposta Modello:</strong> <em>Tzelem</em> (tradotto in greco con <em>eikōn</em> e in latino con <em>imago</em>) indica la statua o rappresentazione concreta, denotando la struttura ontologica costitutiva dell'uomo (ragione, volontà, corporeità eretta) che fa di lui il luogotenente e visibile rappresentante di Dio sulla terra. <em>Demuth</em> (greco <em>homoiōsis</em>, latino <em>similitudo</em>) esprime somiglianza dinamica o conformità relazionale, attenuando il rischio di identificazione fisica o idolatrica. Nella patristica (soprattutto con Sant'Ireneo), <em>tzelem</em>/<em>eikōn</em> indicherà la dote naturale inalienabile dell'essere umano creata da Dio, mentre <em>demuth</em>/<em>homoiōsis</em> indicherà la somiglianza soprannaturale compiuta dall'azione dello Spirito Santo mediante la comunione di grazia.
+                </p>
+              </div>
+            </div>
+
+            <!-- Q2 -->
+            <div class="p-3.5 rounded-xl bg-[var(--reader-surface)] border border-[var(--reader-border)] space-y-2">
+              <div class="flex items-center justify-between cursor-pointer" onclick="toggleExamAccordion('q-2')">
+                <span class="text-xs font-bold text-[var(--reader-heading)]">
+                  2. Come definisce il Concilio di Trento (Sessione VI, cap. 7) la <em>causa formalis</em> della giustificazione?
+                </span>
+                <span class="text-xs font-bold text-amber-500 ml-2" id="q-2-icon">▼</span>
+              </div>
+              <div id="q-2" class="hidden text-xs text-[var(--reader-muted)] pt-2 border-t border-[var(--reader-border)] leading-relaxed space-y-1">
+                <p>
+                  <strong>Risposta Modello:</strong> Il Concilio di Trento (DH 1529) stabilisce solennemente che l'unica causa formale della giustificazione è la giustizia di Dio: <em>«unica formalis causa est iustitia Dei, non qua ipse iustus est, sed qua nos iustos facit»</em>. Contro la tesi protestante della giustificazione per sola imputazione estrinseca, Trento afferma che la grazia giustificante rinnova interiormente l'uomo mediante l'infusione della carità (*caritas diffusa in cordibus per Spiritum Sanctum*), rendendolo realmente e ontologicamente giusto agli occhi di Dio.
+                </p>
+              </div>
+            </div>
+
+            <!-- Q3 -->
+            <div class="p-3.5 rounded-xl bg-[var(--reader-surface)] border border-[var(--reader-border)] space-y-2">
+              <div class="flex items-center justify-between cursor-pointer" onclick="toggleExamAccordion('q-3')">
+                <span class="text-xs font-bold text-[var(--reader-heading)]">
+                  3. Qual è la duplice funzione della grazia secondo San Tommaso d'Aquino (<em>gratia sanans</em> et <em>gratia elevans</em>)?
+                </span>
+                <span class="text-xs font-bold text-amber-500 ml-2" id="q-3-icon">▼</span>
+              </div>
+              <div id="q-3" class="hidden text-xs text-[var(--reader-muted)] pt-2 border-t border-[var(--reader-border)] leading-relaxed space-y-1">
+                <p>
+                  <strong>Risposta Modello:</strong> Nella <em>Summa Theologiae</em> (I-II, q. 109, a. 2), l'Aquinate chiarisce che la natura umana decaduta a causa del peccato originale necessita della grazia sotto due aspetti distinti:
+                  <br>1) <strong><em>Gratia sanans</em>:</strong> risana la natura dalle ferite del peccato (ignoranza, malizia, debolezza, concupiscenza), permettendo alla creatura di compiere anche il bene morale proporzionato alla sua natura;
+                  <br>2) <strong><em>Gratia elevans</em>:</strong> trascende radicalmente le capacità della natura creata, elevando l'uomo a partecipare alla vita intima di Dio (*deificatio* / *consortes divinae naturae*), rendendolo capace della visione beatifica.
+                </p>
+              </div>
+            </div>
+
+            <!-- Q4 -->
+            <div class="p-3.5 rounded-xl bg-[var(--reader-surface)] border border-[var(--reader-border)] space-y-2">
+              <div class="flex items-center justify-between cursor-pointer" onclick="toggleExamAccordion('q-4')">
+                <span class="text-xs font-bold text-[var(--reader-heading)]">
+                  4. Quali sono le 4 dimensioni della dignità umana distinte nella dichiarazione <em>Dignitas Infinita</em> (DDF, 2024)?
+                </span>
+                <span class="text-xs font-bold text-amber-500 ml-2" id="q-4-icon">▼</span>
+              </div>
+              <div id="q-4" class="hidden text-xs text-[var(--reader-muted)] pt-2 border-t border-[var(--reader-border)] leading-relaxed space-y-1">
+                <p>
+                  <strong>Risposta Modello:</strong> <em>Dignitas Infinita</em> (§§ 7–9) distingue quattro accezioni:
+                  <br>1) <strong>Dignità ontologica:</strong> inerisce all'essere umano in quanto persona creata da Dio; è incondizionata, inalienabile e non può mai essere perduta né da colpe morali né da patologie fisiche o psichiche;
+                  <br>2) <strong>Dignità morale:</strong> legata all'esercizio della libertà e dell'agire conforme alla coscienza retta (può essere ferita dal peccato);
+                  <br>3) <strong>Dignità sociale:</strong> legata alle condizioni esterne di vita, ai diritti civili e all'inclusione nella comunità umana;
+                  <br>4) <strong>Dignità esistenziale:</strong> legata alla percezione soggettiva del senso della propria vita di fronte a sofferenza, solitudine o abbandono.
+                </p>
+              </div>
+            </div>
+
+            <!-- Q5 -->
+            <div class="p-3.5 rounded-xl bg-[var(--reader-surface)] border border-[var(--reader-border)] space-y-2">
+              <div class="flex items-center justify-between cursor-pointer" onclick="toggleExamAccordion('q-5')">
+                <span class="text-xs font-bold text-[var(--reader-heading)]">
+                  5. Perché secondo Paul O'Callaghan il mito di Sisifo rappresenta l'antitesi dell'antropologia cristiana della grazia?
+                </span>
+                <span class="text-xs font-bold text-amber-500 ml-2" id="q-5-icon">▼</span>
+              </div>
+              <div id="q-5" class="hidden text-xs text-[var(--reader-muted)] pt-2 border-t border-[var(--reader-border)] leading-relaxed space-y-1">
+                <p>
+                  <strong>Risposta Modello:</strong> Sisifo (nella lettura di Albert Camus e di O'Callaghan) è condannato a spingere eternamente un masso sulla sommità del monte per vederlo poi ricadere. Rappresenta l'eroe tragico della pura immanenza chiusa: deve generare significato unicamente da se stesso, rifiutando l'aiuto di Dio e degli altri, in una fatica ciclica priva di compimento e di salvezza. L'antropologia cristiana capovolge questa prospettiva: l'uomo non è condannato all'autosufficienza solipsistica, perché l'iniziativa salvifica appartiene a Dio (*Deus semper antevenit*); l'esistenza non è condanna assurda ma vocazione al dono, e la fatica trova riposo e redenzione nell'incontro pasquale con Cristo.
+                </p>
+              </div>
+            </div>
+
+            <!-- Q6 -->
+            <div class="p-3.5 rounded-xl bg-[var(--reader-surface)] border border-[var(--reader-border)] space-y-2">
+              <div class="flex items-center justify-between cursor-pointer" onclick="toggleExamAccordion('q-6')">
+                <span class="text-xs font-bold text-[var(--reader-heading)]">
+                  6. Che cosa afferma Tertulliano nel celebre passo <em>«Christus cogitabatur homo futurus»</em> (<em>De carnis resurrectione</em>, 6)?
+                </span>
+                <span class="text-xs font-bold text-amber-500 ml-2" id="q-6-icon">▼</span>
+              </div>
+              <div id="q-6" class="hidden text-xs text-[var(--reader-muted)] pt-2 border-t border-[var(--reader-border)] leading-relaxed space-y-1">
+                <p>
+                  <strong>Risposta Modello:</strong> Tertulliano sottolinea la centralità cristologica della protologia: quando Dio plasmò Adamo dal fango della terra, non agiva a caso, ma aveva già dinnanzi a sé il prototipo perfetto dell'uomo, cioè il Verbo Incarnato. L'umanità del Cristo non è un ripensamento successivo al peccato, ma l'archetipo originale in vista del quale è stata concepita e modellata la natura corporea dell'essere umano.
+                </p>
+              </div>
+            </div>
+
+            <!-- Q7 -->
+            <div class="p-3.5 rounded-xl bg-[var(--reader-surface)] border border-[var(--reader-border)] space-y-2">
+              <div class="flex items-center justify-between cursor-pointer" onclick="toggleExamAccordion('q-7')">
+                <span class="text-xs font-bold text-[var(--reader-heading)]">
+                  7. In che cosa consiste l'errore del Baianismo e del Giansenismo circa lo stato di natura integra e la gratuità del soprannaturale?
+                </span>
+                <span class="text-xs font-bold text-amber-500 ml-2" id="q-7-icon">▼</span>
+              </div>
+              <div id="q-7" class="hidden text-xs text-[var(--reader-muted)] pt-2 border-t border-[var(--reader-border)] leading-relaxed space-y-1">
+                <p>
+                  <strong>Risposta Modello:</strong> Michele Baio (Baius) e Giansenio ritenevano che la grazia originale e l'integrità concessa ad Adamo nel paradiso (*status naturae integrae*) non fossero un dono assolutamente gratuito e indebito (*donum supernaturale*), ma un elemento dovuto alla natura umana per il solo fatto di essere stata creata retta da Dio. Conseguentemente, per loro, dopo il peccato originale la natura umana non è semplicemente ferita e bisognosa di guarigione, ma intrinsecamente corrotta e priva di libero arbitrio per il bene. Il Magistero ha condannato queste tesi, riaffermando la totale gratuità sia dell'elevazione soprannaturale primigenia sia della redenzione in Cristo.
+                </p>
+              </div>
+            </div>
+
+            <!-- Q8 -->
+            <div class="p-3.5 rounded-xl bg-[var(--reader-surface)] border border-[var(--reader-border)] space-y-2">
+              <div class="flex items-center justify-between cursor-pointer" onclick="toggleExamAccordion('q-8')">
+                <span class="text-xs font-bold text-[var(--reader-heading)]">
+                  8. Qual è il significato dell'assioma conciliare <em>«Deus semper antevenit»</em> in rapporto alla cooperazione della libertà umana?
+                </span>
+                <span class="text-xs font-bold text-amber-500 ml-2" id="q-8-icon">▼</span>
+              </div>
+              <div id="q-8" class="hidden text-xs text-[var(--reader-muted)] pt-2 border-t border-[var(--reader-border)] leading-relaxed space-y-1">
+                <p>
+                  <strong>Risposta Modello:</strong> Ribadito fortemente dal Concilio di Orange II (529) e da Trento, l'assioma esprime il primato assoluto della *gratia praeveniens*: nessun atto di fede, desiderio di conversione o preghiera meritoria può sorgere nel cuore umano se non è previamente suscitato, ispirato e sostenuto dall'iniziativa amorevole dello Spirito Santo. La libertà umana non precede l'azione divina, ma è liberata e resa capace di rispondere proprio grazie all'anticipo dell'amore preveniente di Dio.
+                </p>
+              </div>
+            </div>
+
+            <!-- Q9 -->
+            <div class="p-3.5 rounded-xl bg-[var(--reader-surface)] border border-[var(--reader-border)] space-y-2">
+              <div class="flex items-center justify-between cursor-pointer" onclick="toggleExamAccordion('q-9')">
+                <span class="text-xs font-bold text-[var(--reader-heading)]">
+                  9. Che cosa significa la formula biblica <em>«consortes divinae naturae»</em> (<em>2 Pietro</em> 1:4) nell'antropologia teologica?
+                </span>
+                <span class="text-xs font-bold text-amber-500 ml-2" id="q-9-icon">▼</span>
+              </div>
+              <div id="q-9" class="hidden text-xs text-[var(--reader-muted)] pt-2 border-t border-[var(--reader-border)] leading-relaxed space-y-1">
+                <p>
+                  <strong>Risposta Modello:</strong> È il fondamento biblico della dottrina della *theosis* o deificazione della grazia: per mezzo delle preziose promesse in Cristo, l'uomo non riceve soltanto un perdono giuridico esterno, ma viene ammesso a partecipare realmente, per grazia creata e inabitazione dello Spirito, alla natura stessa e alla vita trinitaria di Dio, diventando vero figlio nel Figlio unigenito (*filii in Filio*).
+                </p>
+              </div>
+            </div>
+
+            <!-- Q10 -->
+            <div class="p-3.5 rounded-xl bg-[var(--reader-surface)] border border-[var(--reader-border)] space-y-2">
+              <div class="flex items-center justify-between cursor-pointer" onclick="toggleExamAccordion('q-10')">
+                <span class="text-xs font-bold text-[var(--reader-heading)]">
+                  10. Qual è il nucleo teologico dell'affermazione di <em>Gaudium et Spes</em> 22: <em>«Christus hominem ipsi homini plene manifestat»</em>?
+                </span>
+                <span class="text-xs font-bold text-amber-500 ml-2" id="q-10-icon">▼</span>
+              </div>
+              <div id="q-10" class="hidden text-xs text-[var(--reader-muted)] pt-2 border-t border-[var(--reader-border)] leading-relaxed space-y-1">
+                <p>
+                  <strong>Risposta Modello:</strong> Il Vaticano II stabilisce che l'antropologia non può raggiungere la pienezza della verità sull'uomo con le sole risorse della filosofia o delle scienze empiriche. Poiché l'uomo è stato creato in Cristo e per Cristo (*Col* 1:16), solo nella contemplazione del mistero del Verbo incarnato l'essere umano scopre la grandezza della propria dignità originaria, il rimedio alla ferita del peccato e la sublime vocazione all'autodonazione d'amore (*GS* 24).
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 5. ANTEPRIMA ESAME FINALE (PARTE III: CAPP. 27–40) -->
+        <div class="p-6 rounded-2xl bg-[var(--reader-surface)] border border-[var(--reader-border)] space-y-4">
+          <div class="flex items-center space-x-2">
+            <span class="text-xl">🔮</span>
+            <h3 class="text-base font-bold text-[var(--reader-heading)]">
+              Anteprima Tracce Esame Finale (Parte III: Capp. 27–40)
+            </h3>
+          </div>
+          <p class="text-xs text-[var(--reader-muted)] leading-relaxed">
+            Per orientare la preparazione futura della sessione invernale (Gennaio–Febbraio 2027), ecco i 4 macro-filoni speculativi previsti per la seconda prova:
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+            <div class="p-3.5 rounded-xl bg-[var(--reader-bg)] border border-[var(--reader-border)] space-y-1">
+              <span class="font-bold text-indigo-600 dark:text-indigo-400 block">Tema A: Natura & Soprannaturale (Cap. 27)</span>
+              <p class="text-[var(--reader-muted)]">Il dibattito sull'ipotesi della *natura pura* da Gaetano e Suarez fino alla controversia del XX secolo (De Lubac) e la sintesi di O'Callaghan.</p>
+            </div>
+            <div class="p-3.5 rounded-xl bg-[var(--reader-bg)] border border-[var(--reader-border)] space-y-1">
+              <span class="font-bold text-indigo-600 dark:text-indigo-400 block">Tema B: L'Unione di Anima e Corpo (Capp. 28–29)</span>
+              <p class="text-[var(--reader-muted)]">L'unità hylomorfica aristotelico-tomista confermata dal Concilio di Vienne (1312, l'anima forma del corpo) contro dualismo cartesiano e materialismo.</p>
+            </div>
+            <div class="p-3.5 rounded-xl bg-[var(--reader-bg)] border border-[var(--reader-border)] space-y-1">
+              <span class="font-bold text-indigo-600 dark:text-indigo-400 block">Tema C: Maschio, Femmina & Lavoro (Capp. 35–38)</span>
+              <p class="text-[var(--reader-muted)]">La teologia del corpo, la sponsalità (*Mulieris Dignitatem*) e la santificazione del lavoro umano (*Laborem Exercens*) come partecipazione creaturale.</p>
+            </div>
+            <div class="p-3.5 rounded-xl bg-[var(--reader-bg)] border border-[var(--reader-border)] space-y-1">
+              <span class="font-bold text-indigo-600 dark:text-indigo-400 block">Tema D: La Persona Umana (Capp. 39–40)</span>
+              <p class="text-[var(--reader-muted)]">Il contributo originale del cristianesimo all'antropologia: dalla definizione di Boezio a San Tommaso (*subsistens in rationali natura*) e la persona come apertura relazionale.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- TAB 4: 📚 SOURCES & ANKI DECK HUB                                         -->
     <!-- ========================================================================= -->
     <section id="tab-sources" class="tab-content hidden flex-1 overflow-y-auto p-6 lg:p-10">
+
       <div class="max-w-4xl mx-auto space-y-8">
         
         <div>
@@ -1054,7 +1586,31 @@
     // ==========================================
     function copyPrompt(text) {
       navigator.clipboard.writeText(text).then(() => {
-        alert("Prompt copied to clipboard! Switch to your Antigravity chat and press Ctrl+V.");
+        showToast("Prompt copiato negli appunti! Incollalo su Antigravity (Ctrl+V).");
+      });
+    }
+
+    // ==========================================
+    // EXAM HUB INTERACTIVITY
+    // ==========================================
+    function toggleExamAccordion(id) {
+      const el = document.getElementById(id);
+      const icon = document.getElementById(id + '-icon');
+      if (el) {
+        el.classList.toggle('hidden');
+        if (icon) {
+          icon.textContent = el.classList.contains('hidden') ? '▼' : '▲';
+        }
+      }
+    }
+
+    function copyExamSparringPrompt() {
+      const prompt = `Agisci come l'esaminatore accademico di Antropologia Teologica (Prof.ssa Catalina Vial de Amesti, PUSC).
+Sottoponimi a una simulazione rigorosa per l'Esame Parziale del corso 9E44.
+Proponimi una terna di 3 tracce generali tra cui scegliere e 2 domande brevi puntuali su Parte I e Parte II.
+Attendo la tua prova d'esame.`;
+      navigator.clipboard.writeText(prompt).then(() => {
+        showToast("⚡ Prompt d'esame copiato! Incollalo nella chat per simulare la prova scritta.");
       });
     }
 
