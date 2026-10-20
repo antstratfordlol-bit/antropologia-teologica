@@ -122,6 +122,49 @@
     .prose th { background: var(--reader-surface); font-weight: 600; }
     .prose blockquote { border-left: 4px solid var(--reader-accent); padding-left: 1rem; font-style: italic; margin: 1rem 0; color: var(--reader-muted); }
     .prose code { background: var(--reader-quote-bg); color: var(--reader-accent); padding: 0.2rem 0.4rem; border-radius: 0.25rem; font-family: monospace; font-size: 0.85em; }
+
+    /* Bookmark inside text styles */
+    .reader-elem-wrapper {
+      position: relative;
+      transition: background-color 0.2s ease, border-color 0.2s ease;
+    }
+    .reader-elem-wrapper:hover .bookmark-action-btn {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .bookmark-action-btn {
+      position: absolute;
+      right: -2.25rem;
+      top: 0.15rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease, transform 0.15s ease;
+      cursor: pointer;
+      user-select: none;
+    }
+    @media (max-width: 1024px) {
+      .bookmark-action-btn {
+        right: -0.25rem;
+        opacity: 0.4;
+        pointer-events: auto;
+      }
+    }
+    .reader-bookmarked {
+      border-left: 4px solid #f59e0b !important;
+      background: rgba(245, 158, 11, 0.08) !important;
+      padding-left: 1rem !important;
+      padding-right: 0.75rem !important;
+      border-radius: 0 0.5rem 0.5rem 0;
+      position: relative;
+    }
+    @keyframes pulse-bookmark {
+      0% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.5); }
+      70% { box-shadow: 0 0 0 10px rgba(245, 158, 11, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); }
+    }
+    .bookmark-pulse {
+      animation: pulse-bookmark 1.5s cubic-bezier(0, 0, 0.2, 1) 2;
+    }
   </style>
 </head>
 <body class="min-h-screen flex flex-col font-sans antialiased">
@@ -266,6 +309,12 @@
               <button onclick="setTheme('sepia')" class="p-1 px-1.5 rounded hover:bg-[var(--reader-surface)] transition" title="Warm Book Theme">📜</button>
               <button onclick="setTheme('dark')" class="p-1 px-1.5 rounded hover:bg-[var(--reader-surface)] transition" title="Midnight Slate Theme">🌙</button>
             </div>
+
+            <!-- Jump to Bookmark Button -->
+            <button onclick="jumpToBookmark()" id="btn-header-bookmark" class="p-1 px-2.5 text-xs font-semibold rounded bg-[var(--reader-bg)] border border-[var(--reader-border)] hover:bg-amber-500/10 hover:border-amber-500/40 hover:text-amber-600 transition flex items-center space-x-1" title="Jump to saved reading bookmark">
+              <span>🔖</span>
+              <span id="btn-bookmark-label" class="hidden sm:inline">Bookmark</span>
+            </button>
 
             <div class="h-4 w-px bg-[var(--reader-border)] mx-1"></div>
 
@@ -605,11 +654,13 @@
       const text = document.getElementById('sidebar-toggle-text');
       const icon = document.getElementById('sidebar-toggle-icon');
       const btn = document.getElementById('btn-focus-mode');
+      const floatingBar = document.getElementById('floating-bottom-bar');
 
       if (sidebarOpen) {
         sb?.classList.remove('hidden');
         header?.classList.remove('hidden');
         mobileNav?.classList.remove('hidden');
+        floatingBar?.classList.add('hidden');
         if (text) text.textContent = "Focus";
         if (icon) icon.textContent = "◨";
         if (btn) btn.title = "Toggle Distraction-Free Focus Mode (Hides header & sidebar) [Esc]";
@@ -617,6 +668,7 @@
         sb?.classList.add('hidden');
         header?.classList.add('hidden');
         mobileNav?.classList.add('hidden');
+        floatingBar?.classList.remove('hidden');
         if (text) text.textContent = "Exit Focus";
         if (icon) icon.textContent = "✕";
         if (btn) btn.title = "Exit Focus Mode (Show header & sidebar) [Esc]";
@@ -702,6 +754,8 @@
           const idx = chapters.findIndex(c => c.chapter === ch.chapter);
           const isRead = readChapters.includes(ch.chapter);
           const isActive = idx === currentChapterIdx;
+          const savedBookmark = getBookmark();
+          const hasBookmark = savedBookmark && savedBookmark.chapter === ch.chapter;
 
           const btn = document.createElement('div');
           btn.className = `p-2 px-2.5 rounded-xl text-xs cursor-pointer transition flex items-center justify-between ${
@@ -714,9 +768,12 @@
               <span class="w-5 text-right font-mono font-bold text-[var(--reader-muted)] flex-shrink-0">${ch.chapter}.</span>
               <span class="truncate leading-snug">${ch.title}</span>
             </div>
-            <span class="text-xs flex-shrink-0 ${isRead ? 'text-emerald-500 font-bold' : 'text-[var(--reader-muted)] opacity-40'}">
-              ${isRead ? '✓' : '○'}
-            </span>
+            <div class="flex items-center space-x-1.5 flex-shrink-0">
+              ${hasBookmark ? '<span class="text-xs" title="Contains active reading bookmark">🔖</span>' : ''}
+              <span class="text-xs ${isRead ? 'text-emerald-500 font-bold' : 'text-[var(--reader-muted)] opacity-40'}">
+                ${isRead ? '✓' : '○'}
+              </span>
+            </div>
           `;
           partSection.appendChild(btn);
         });
@@ -731,7 +788,7 @@
       renderChapterList();
     }
 
-    function selectChapter(idx) {
+    function selectChapter(idx, resetScroll = true) {
       currentChapterIdx = idx;
       const ch = chapters[idx];
       document.getElementById('current-chapter-num').textContent = `Cap. ${ch.chapter}`;
@@ -744,34 +801,70 @@
       const bodyEl = document.getElementById('chapter-body');
       bodyEl.innerHTML = '';
 
-      // Injected structured elements
-      ch.elements.forEach(([type, text]) => {
-        if (type === 'h3') {
-          const h = document.createElement('h3');
-          h.className = "reader-h3";
-          h.textContent = text;
-          bodyEl.appendChild(h);
-        } else if (type === 'h4') {
-          const h = document.createElement('h4');
-          h.className = "reader-h4";
-          h.textContent = text;
-          bodyEl.appendChild(h);
-        } else if (type === 'blockquote') {
-          const bq = document.createElement('blockquote');
-          bq.className = "reader-blockquote";
-          bq.textContent = text;
-          bodyEl.appendChild(bq);
-        } else {
-          const p = document.createElement('p');
-          p.className = "reader-p";
-          p.textContent = text;
-          bodyEl.appendChild(p);
+      const savedBookmark = getBookmark();
+
+      // Injected structured elements with paragraph-level bookmarking
+      ch.elements.forEach(([type, text], elemIdx) => {
+        const wrapper = document.createElement('div');
+        wrapper.className = "reader-elem-wrapper group relative my-2";
+        wrapper.id = `ch-${ch.chapter}-el-${elemIdx}`;
+
+        const isThisBookmarked = (savedBookmark && savedBookmark.chapter === ch.chapter && savedBookmark.elemIdx === elemIdx);
+        if (isThisBookmarked) {
+          wrapper.classList.add('reader-bookmarked', 'bookmark-pulse');
         }
+
+        // Bookmark Trigger Button beside paragraph
+        const bmBtn = document.createElement('button');
+        bmBtn.className = `bookmark-action-btn p-1 px-1.5 rounded-md text-xs transition ${isThisBookmarked ? 'opacity-100 text-amber-500 font-bold' : 'text-zinc-400 hover:text-amber-500'}`;
+        bmBtn.title = isThisBookmarked ? "Active bookmark! Click to remove" : "Set bookmark at this paragraph";
+        bmBtn.innerHTML = isThisBookmarked ? "🔖" : "📑";
+        bmBtn.onclick = (e) => {
+          e.stopPropagation();
+          if (isThisBookmarked) {
+            clearBookmark();
+          } else {
+            setBookmark(ch.chapter, elemIdx, text);
+          }
+        };
+
+        if (isThisBookmarked) {
+          const badge = document.createElement('div');
+          badge.className = "flex items-center space-x-1.5 text-[11px] font-bold text-amber-600 dark:text-amber-400 mb-1 select-none";
+          badge.innerHTML = `<span>🔖 Active Reading Bookmark</span> <button onclick="clearBookmark()" class="text-xs hover:text-red-500 ml-2 underline cursor-pointer">Remove</button>`;
+          wrapper.appendChild(badge);
+        }
+
+        let el;
+        if (type === 'h3') {
+          el = document.createElement('h3');
+          el.className = "reader-h3";
+          el.textContent = text;
+        } else if (type === 'h4') {
+          el = document.createElement('h4');
+          el.className = "reader-h4";
+          el.textContent = text;
+        } else if (type === 'blockquote') {
+          el = document.createElement('blockquote');
+          el.className = "reader-blockquote";
+          el.textContent = text;
+        } else {
+          el = document.createElement('p');
+          el.className = "reader-p";
+          el.textContent = text;
+        }
+
+        wrapper.appendChild(el);
+        wrapper.appendChild(bmBtn);
+        bodyEl.appendChild(wrapper);
       });
 
       document.getElementById('mark-chapter-read').checked = readChapters.includes(ch.chapter);
       renderChapterList();
-      document.getElementById('reader-pane').scrollTop = 0;
+      updateBookmarkUI();
+      if (resetScroll) {
+        document.getElementById('reader-pane').scrollTop = 0;
+      }
       handleReaderScroll();
     }
 
@@ -791,6 +884,105 @@
     }
     function nextChapter() {
       if (currentChapterIdx < chapters.length - 1) selectChapter(currentChapterIdx + 1);
+    }
+
+    // ==========================================
+    // BOOKMARK ENGINE
+    // ==========================================
+    function getBookmark() {
+      try {
+        const val = localStorage.getItem('reader_bookmark_v1');
+        return val ? JSON.parse(val) : null;
+      } catch (e) {
+        return null;
+      }
+    }
+
+    function setBookmark(chapterNum, elemIdx, previewText) {
+      const bm = {
+        chapter: chapterNum,
+        elemIdx: elemIdx,
+        preview: (previewText || '').substring(0, 80),
+        timestamp: Date.now()
+      };
+      localStorage.setItem('reader_bookmark_v1', JSON.stringify(bm));
+      selectChapter(currentChapterIdx, false);
+      showToast(`🔖 Bookmark set at Cap. ${chapterNum}`);
+    }
+
+    function clearBookmark() {
+      localStorage.removeItem('reader_bookmark_v1');
+      selectChapter(currentChapterIdx, false);
+      showToast("Bookmark removed");
+    }
+
+    function jumpToBookmark() {
+      const bm = getBookmark();
+      if (!bm) {
+        showToast("No bookmark yet. Click 📑 beside any paragraph to set one!");
+        return;
+      }
+      const targetChapIdx = chapters.findIndex(c => c.chapter === bm.chapter);
+      if (targetChapIdx === -1) return;
+
+      if (currentChapterIdx !== targetChapIdx) {
+        selectChapter(targetChapIdx, false);
+      }
+
+      setTimeout(() => {
+        const targetEl = document.getElementById(`ch-${bm.chapter}-el-${bm.elemIdx}`);
+        if (targetEl) {
+          targetEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          targetEl.classList.remove('bookmark-pulse');
+          void targetEl.offsetWidth; // trigger reflow
+          targetEl.classList.add('bookmark-pulse');
+          showToast(`Jumped to bookmark in Cap. ${bm.chapter}`);
+        }
+      }, 120);
+    }
+
+    function updateBookmarkUI() {
+      const bm = getBookmark();
+      const label = document.getElementById('btn-bookmark-label');
+      const btn = document.getElementById('btn-header-bookmark');
+      const floatingBm = document.getElementById('floating-jump-bm');
+
+      if (bm) {
+        if (label) label.textContent = `Cap. ${bm.chapter}`;
+        if (btn) {
+          btn.classList.add('bg-amber-500/15', 'border-amber-500/40', 'text-amber-700', 'dark:text-amber-300');
+          btn.title = `Jump to saved bookmark at Cap. ${bm.chapter}`;
+        }
+        if (floatingBm) {
+          floatingBm.classList.remove('hidden');
+          floatingBm.title = `Jump to saved bookmark at Cap. ${bm.chapter}`;
+        }
+      } else {
+        if (label) label.textContent = `Bookmark`;
+        if (btn) {
+          btn.classList.remove('bg-amber-500/15', 'border-amber-500/40', 'text-amber-700', 'dark:text-amber-300');
+          btn.title = `No active bookmark set (click 📑 beside any paragraph)`;
+        }
+        if (floatingBm) {
+          floatingBm.classList.add('hidden');
+        }
+      }
+    }
+
+    function showToast(msg) {
+      let toast = document.getElementById('reader-toast');
+      if (!toast) {
+        toast = document.createElement('div');
+        toast.id = 'reader-toast';
+        toast.className = 'fixed bottom-20 left-1/2 transform -translate-x-1/2 z-50 px-4 py-2 rounded-full bg-zinc-900/90 text-white text-xs font-semibold shadow-2xl transition-opacity duration-300 pointer-events-none opacity-0 border border-zinc-700 backdrop-blur-md';
+        document.body.appendChild(toast);
+      }
+      toast.textContent = msg;
+      toast.classList.remove('opacity-0');
+      clearTimeout(window.__toastTimeout);
+      window.__toastTimeout = setTimeout(() => {
+        toast.classList.add('opacity-0');
+      }, 2200);
     }
 
     // ==========================================
@@ -884,10 +1076,37 @@
       }
 
       renderChapterList();
-      selectChapter(0);
+      const bm = getBookmark();
+      if (bm) {
+        const bmIdx = chapters.findIndex(c => c.chapter === bm.chapter);
+        if (bmIdx !== -1) {
+          selectChapter(bmIdx, false);
+          setTimeout(() => jumpToBookmark(), 250);
+        } else {
+          selectChapter(0);
+        }
+      } else {
+        selectChapter(0);
+      }
       renderLectureList();
       selectLecture(0);
+      updateBookmarkUI();
     });
   </script>
+
+  <!-- FLOATING BOTTOM-RIGHT ACTION CORNER (VISIBLE IN FOCUS MODE) -->
+  <div id="floating-bottom-bar" class="hidden fixed bottom-6 right-6 z-50 flex items-center space-x-2.5 transition-all duration-300">
+    <!-- Quick Bookmark Jump Button -->
+    <button onclick="jumpToBookmark()" id="floating-jump-bm" class="p-2.5 px-3.5 rounded-full bg-[var(--reader-surface)]/95 backdrop-blur-md border border-[var(--reader-border)] shadow-xl text-xs font-semibold text-[var(--reader-text)] hover:bg-[var(--reader-bg)] flex items-center space-x-1.5 transition hover:scale-105 active:scale-95 cursor-pointer" title="Jump to saved reading bookmark">
+      <span>🔖</span>
+      <span class="hidden md:inline">Bookmark</span>
+    </button>
+
+    <!-- Unfocus Button -->
+    <button onclick="toggleSidebar()" class="p-2.5 px-4 rounded-full bg-indigo-600 hover:bg-indigo-700 text-white shadow-2xl text-xs font-bold flex items-center space-x-2 transition hover:scale-105 active:scale-95 ring-2 ring-indigo-500/30 cursor-pointer" title="Exit Focus Mode (Reveal top tab bar & sidebar) [Esc]">
+      <span>▥</span>
+      <span>Unfocus</span>
+    </button>
+  </div>
 </body>
 </html>
