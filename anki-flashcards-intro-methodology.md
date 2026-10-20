@@ -621,3 +621,53 @@ Technocracy views creation as brute, passive matter to manipulate for utility an
 
 ---
 
+## ✝️ Christological Anthropology, Converted Humanism & Bodily Redemption (Cards 76–81)
+
+### Card 76 — What is the foundational Christological and anthropological formula of Gaudium et Spes 22 (§ 1)?
+- **Front:** What is the foundational Christological and anthropological formula of *Gaudium et Spes* 22 (§ 1)?
+- **Back:** <i>"Reapse nonnisi in mysterio Verbi incarnati mysterium hominis vere clarescit... Christus, novissimus Adam, [...] hominem ipsi homini plene manifestat eique altissimam eius vocationem patefacit."</i> (Only in the mystery of the Incarnate Word does the mystery of man truly become clear... Christ, the new Adam, fully reveals man to himself and makes his supreme calling clear).
+
+<b>🧠 Mnemonic:</b> <b>N-A-M-P:</b> <b>N</b>ovissimus <b>A</b>dam <b>M</b>anifestat <b>P</b>atefacit (The New Adam Manifests man to himself and Patents his calling).
+
+---
+
+### Card 77 — How does Gaudium et Spes 24 (§ 3) define the paradox of human self-fulfillment?
+- **Front:** How does *Gaudium et Spes* 24 (§ 3) define the paradox of human self-fulfillment?
+- **Back:** Man is the only creature on earth that God willed for its own sake, but <i>"plene seipsum invenire non posse nisi per sincerum sui ipsius donum"</i> (he cannot fully find himself except through a sincere gift of self).
+
+<b>🧠 Mnemonic:</b> <b>S-S-D:</b> <b>S</b>incerum <b>S</b>ui <b>D</b>onum (Self-giving is the Secret to Discovering oneself).
+
+---
+
+### Card 78 — Why can natural human love (amor naturalis) never evolve linearly into supernatural charity (caritas infusa)?
+- **Front:** Why can natural human love (*amor naturalis*) never evolve linearly into supernatural charity (*caritas infusa*)?
+- **Back:** Because of the infinite qualitative disproportion between creature and Creator. Even in unfallen Adam (<i>status naturae integrae</i>), <i>caritas</i> is an unowed divine gift (<i>donum indebitum / donum superadditum</i>) participating in the Holy Spirit. Claiming unfallen natural love is already supernatural charity is the condemned heresy of <b>Baianism</b> (1567).
+
+<b>🧠 Mnemonic:</b> <b>Baius Blurs</b> nature and grace; <b>Thomas Distinguishes</b> <i>amor naturalis</i> (human will) from <i>caritas</i> (Holy Spirit's indwelling).
+
+---
+
+### Card 79 — Does Christ's redemption merely return humanity to Adam's unfallen status in the Garden of Eden?
+- **Front:** Does Christ's redemption merely return humanity to Adam's unfallen status in the Garden of Eden?
+- **Back:** <b>No.</b> As the <i>Exsultet</i> proclaims (<i>"O felix culpa"</i>) and Romans 5:20 affirms (<i>"superabundavit gratia"</i>), redemption in Christ elevates man to an ontologically higher dignity: incorporation as living members of the <b>Mystical Body of Christ</b> (<i>Corpus Christi mysticum</i>) and adoptive sons in the Only-Begotten Son (<i>filii in Filio</i>).
+
+<b>🧠 Mnemonic:</b> <b>Adam had a Garden; the Christian has the Trinity.</b>
+
+---
+
+### Card 80 — Why do Henri de Lubac and Paul O'Callaghan insist that Christian humanism must be a 'converted humanism' (humanisme converti)?
+- **Front:** Why do Henri de Lubac and Paul O'Callaghan insist that Christian humanism must be a 'converted humanism' (*humanisme converti*)?
+- **Back:** Because human self-realization cannot be achieved on natural, worldly terms. The Cross of Christ (<i>crux Christi</i>) stands as a stumbling block and folly (1 Cor 1:23) that crucifies the old man (<i>vetus homo</i>) and its self-idolatry, so that the new man (<i>novus homo</i>, Eph 4:24) can be born through <i>metanoia</i>.
+
+<b>🧠 Mnemonic:</b> <b>The Cross is the Crucible of Humanism:</b> No Easter without Good Friday; no new man without dying to the old.
+
+---
+
+### Card 81 — What is Tertullian's famous formulation in De carnis resurrectione 8, 2 regarding the dignity of the body in salvation?
+- **Front:** What is Tertullian's famous formulation in *De carnis resurrectione* 8, 2 regarding the dignity of the body in salvation?
+- **Back:** <i>"Caro cardo salutis"</i> (The flesh is the hinge of salvation). Since the Son of God took on flesh and was raised bodily, the human body is not a prison to escape, but the somatic hinge through which grace, sacraments, and eternal life enter man.
+
+<b>🧠 Mnemonic:</b> <b>Cardo = Hinge:</b> The flesh is the somatic doorframe through which the Incarnation swings open into eternal glory.
+
+---
+
