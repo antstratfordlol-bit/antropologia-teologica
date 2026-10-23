@@ -166,6 +166,19 @@
       animation: pulse-bookmark 1.5s cubic-bezier(0, 0, 0.2, 1) 2;
     }
   </style>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (window.mermaid) {
+        const isDark = document.documentElement.classList.contains('theme-dark');
+        mermaid.initialize({
+          startOnLoad: false,
+          theme: isDark ? 'dark' : 'default',
+          securityLevel: 'loose'
+        });
+      }
+    });
+  </script>
 </head>
 <body class="min-h-screen flex flex-col font-sans antialiased">
 
@@ -1648,24 +1661,61 @@
       currentLectureSubTab = sub;
       const mBtn = document.getElementById('subtab-master');
       const tBtn = document.getElementById('subtab-trans');
+      const sBtn = document.getElementById('subtab-slides');
 
-      if (sub === 'master') {
-        mBtn.className = "text-xs font-semibold px-3 py-1 rounded-md bg-indigo-600 text-white shadow-sm transition";
-        tBtn.className = "text-xs font-semibold px-3 py-1 rounded-md text-[var(--reader-muted)] hover:text-[var(--reader-heading)] transition";
-      } else {
-        tBtn.className = "text-xs font-semibold px-3 py-1 rounded-md bg-indigo-600 text-white shadow-sm transition";
-        mBtn.className = "text-xs font-semibold px-3 py-1 rounded-md text-[var(--reader-muted)] hover:text-[var(--reader-heading)] transition";
-      }
+      const activeClass = "text-xs font-semibold px-3 py-1 rounded-md bg-indigo-600 text-white shadow-sm transition";
+      const inactiveClass = "text-xs font-semibold px-3 py-1 rounded-md text-[var(--reader-muted)] hover:text-[var(--reader-heading)] transition";
+
+      if (mBtn) mBtn.className = (sub === 'master') ? activeClass : inactiveClass;
+      if (tBtn) tBtn.className = (sub === 'trans') ? activeClass : inactiveClass;
+      if (sBtn) sBtn.className = (sub === 'slides') ? activeClass : inactiveClass;
+
       updateLectureView();
     }
 
     function updateLectureView() {
       const lec = lectures[currentLectureIdx];
       const bodyEl = document.getElementById('lecture-body');
+      if (!bodyEl) return;
+      
       if (currentLectureSubTab === 'master') {
         bodyEl.innerHTML = lec.master_html;
-      } else {
+      } else if (currentLectureSubTab === 'trans') {
         bodyEl.innerHTML = lec.trans_html;
+      } else if (currentLectureSubTab === 'slides') {
+        bodyEl.innerHTML = lec.slides_html || "<p class='p-6 text-sm text-[var(--reader-muted)]'>Nessuna diapositiva disponibile per questa lezione.</p>";
+      }
+      
+      renderMermaidDiagrams();
+    }
+
+    function renderMermaidDiagrams() {
+      if (typeof mermaid === 'undefined') return;
+      const bodyEl = document.getElementById('lecture-body');
+      if (!bodyEl) return;
+
+      const codeBlocks = bodyEl.querySelectorAll('pre code.language-mermaid');
+      if (codeBlocks.length === 0) return;
+
+      codeBlocks.forEach((block) => {
+        const pre = block.parentElement;
+        const code = block.textContent.trim();
+        const container = document.createElement('div');
+        container.className = 'mermaid my-6 flex justify-center bg-[var(--reader-surface)] p-4 rounded-xl border border-[var(--reader-border)] overflow-x-auto';
+        container.textContent = code;
+        pre.replaceWith(container);
+      });
+
+      try {
+        const isDark = document.documentElement.classList.contains('theme-dark');
+        mermaid.initialize({
+          startOnLoad: false,
+          theme: isDark ? 'dark' : 'default',
+          securityLevel: 'loose'
+        });
+        mermaid.run();
+      } catch (e) {
+        console.error("Mermaid error:", e);
       }
     }
 
