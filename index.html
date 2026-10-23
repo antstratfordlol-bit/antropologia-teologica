@@ -391,6 +391,9 @@
             <span id="current-lec-date" class="text-xs text-[var(--reader-muted)]">
               07/10/2026
             </span>
+            <a id="current-lec-slides-btn" href="slides/I. Introduzione.pdf" target="_blank" class="text-[11px] font-semibold px-2.5 py-0.5 rounded-md bg-emerald-500/15 text-emerald-400 hover:bg-emerald-500/25 transition inline-flex items-center space-x-1">
+              <span>📑 Slides (PDF)</span>
+            </a>
           </div>
           <div class="flex items-center space-x-1 bg-[var(--reader-bg)] p-1 rounded-lg border border-[var(--reader-border)]">
             <button onclick="setLectureSubTab('master')" id="subtab-master" class="text-xs font-semibold px-3 py-1 rounded-md bg-indigo-600 text-white shadow-sm transition">
@@ -946,7 +949,7 @@
         
         <div>
           <h2 class="text-2xl font-bold text-[var(--reader-heading)]">Primary Sources, Exam Prep & Anki Deck</h2>
-          <p class="text-sm text-[var(--reader-muted)]">Official course documents, unabridged treatises, and the 75-card Anki deck for your native Anki app.</p>
+          <p class="text-sm text-[var(--reader-muted)]">Official course documents, unabridged treatises, and the 81-card Anki deck for your native Anki app.</p>
         </div>
 
         <!-- Anki Deck Download Banner -->
@@ -955,20 +958,88 @@
             <div>
               <div class="flex items-center space-x-2">
                 <span class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-indigo-500 text-white">Native Anki Integration</span>
-                <span class="text-xs text-indigo-300 font-semibold">75 Atomic Cards with Mnemonics</span>
+                <span class="text-xs text-indigo-300 font-semibold">81 Atomic Cards with Mnemonics</span>
               </div>
               <h3 class="text-lg font-bold text-white mt-1.5">Official Anki Flashcard Deck</h3>
               <p class="text-xs text-slate-300 mt-1 max-w-xl leading-relaxed">
-                Contains all 75 atomic questions, Latin/Greek/Hebrew formulae, and punchy memory hooks (<code class="text-indigo-300">🧠 Mnemonic:</code>) formatted for 1-click import into your desktop or mobile Anki app.
+                Contains all 81 atomic questions, Latin/Greek/Hebrew formulae, and punchy memory hooks (<code class="text-indigo-300">🧠 Mnemonic:</code>) formatted for 1-click import into your desktop or mobile Anki app.
               </p>
             </div>
             <div class="flex flex-wrap items-center gap-2">
-              <a href="file:///C:/Users/antst/Documents/20.%20STB/Year%203/Semester%20I/Antropologia%20Teologica/exam-prep/anki-antropologia-teologica-intro.tsv" target="_blank" class="text-xs font-bold px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white shadow transition flex items-center space-x-1.5">
+              <a href="anki-antropologia-teologica-intro.tsv" download target="_blank" class="text-xs font-bold px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white shadow transition flex items-center space-x-1.5">
                 <span>📥 Import TSV to Anki</span>
               </a>
-              <a href="file:///C:/Users/antst/Documents/20.%20STB/Year%203/Semester%20I/Antropologia%20Teologica/exam-prep/anki-flashcards-intro-methodology.md" target="_blank" class="text-xs font-semibold px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition">
+              <a href="anki-flashcards-intro-methodology.md" target="_blank" target="_blank" class="text-xs font-semibold px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition">
                 📄 View Markdown Cards
               </a>
+            </div>
+          </div>
+        </div>
+
+        
+        <!-- Official Professor Slides Section -->
+        <div class="space-y-3">
+          <div class="flex items-center space-x-2">
+            <span class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">Official Course Handouts</span>
+            <h3 class="text-lg font-bold text-[var(--reader-heading)]">Prof.ssa Catalina Vial de Amesti — Slide Decks</h3>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            
+            <!-- Deck 1: Introduzione -->
+            <div class="p-5 rounded-2xl bg-[var(--reader-surface)] border border-[var(--reader-border)] shadow-sm flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-bold text-emerald-500 uppercase">Deck 1 • 62 Slides</span>
+                  <span class="text-[10px] text-[var(--reader-muted)] font-mono">Lectures 01–02</span>
+                </div>
+                <h4 class="text-sm font-bold text-[var(--reader-heading)] mt-1.5">I. Introduzione & Metodologia</h4>
+                <p class="text-xs text-[var(--reader-muted)] mt-1 leading-relaxed">
+                  Crisi della modernità, 9 polarità antropologiche, <em>Magnifica Humanitas</em>, Sisifo vs Cristo, iconografia trinitaria (Masaccio, Botticelli, Cambrai), <em>Gaudium et Spes</em> 22.
+                </p>
+              </div>
+              <div class="mt-4 pt-3 border-t border-[var(--reader-border)] flex items-center justify-between">
+                <a href="slides/I. Introduzione.pdf" target="_blank" class="text-xs font-semibold px-3 py-1.5 rounded-lg bg-emerald-500/15 text-emerald-400 hover:bg-emerald-500/25 transition flex items-center space-x-1">
+                  <span>📑 Open Slides (PDF)</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Deck 2: Immagine e somiglianza -->
+            <div class="p-5 rounded-2xl bg-[var(--reader-surface)] border border-[var(--reader-border)] shadow-sm flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-bold text-emerald-500 uppercase">Deck 2 • 31 Slides</span>
+                  <span class="text-[10px] text-[var(--reader-muted)] font-mono">Lectures 03–04</span>
+                </div>
+                <h4 class="text-sm font-bold text-[var(--reader-heading)] mt-1.5">II.1 Immagine e Somiglianza di Dio</h4>
+                <p class="text-xs text-[var(--reader-muted)] mt-1 leading-relaxed">
+                  Genesi 1–3, 5, 9; libri sapienziali (<em>Siracide</em> 17, <em>Sapienza</em> 2, <em>Salmo</em> 8); miti mesopotamici ed egizi; sintesi patristica (Ireneo e Tertulliano); <em>Dignitas Infinita</em>.
+                </p>
+              </div>
+              <div class="mt-4 pt-3 border-t border-[var(--reader-border)] flex items-center justify-between">
+                <a href="slides/II.1 Immagine e somiglianza.pdf" target="_blank" class="text-xs font-semibold px-3 py-1.5 rounded-lg bg-emerald-500/15 text-emerald-400 hover:bg-emerald-500/25 transition flex items-center space-x-1">
+                  <span>📑 Open Slides (PDF)</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Deck 3: Giovanni e Paolo -->
+            <div class="p-5 rounded-2xl bg-[var(--reader-surface)] border border-[var(--reader-border)] shadow-sm flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-bold text-emerald-500 uppercase">Deck 3 • 78 Slides</span>
+                  <span class="text-[10px] text-[var(--reader-muted)] font-mono">Lectures 05–06</span>
+                </div>
+                <h4 class="text-sm font-bold text-[var(--reader-heading)] mt-1.5">II.2 La Grazia Filiale: Giovanni e Paolo</h4>
+                <p class="text-xs text-[var(--reader-muted)] mt-1 leading-relaxed">
+                  Pedagogia biblica della grazia (<em>Chen/Chesed/Charis</em>), <em>vita aeterna</em> in San Giovanni (Prologo, Gv 3, 5, 6, 11, 20), la grazia e filiazione in San Paolo (Rm, Gal, 2 Cor).
+                </p>
+              </div>
+              <div class="mt-4 pt-3 border-t border-[var(--reader-border)] flex items-center justify-between">
+                <a href="slides/Giovanni e Paolo.pdf" target="_blank" class="text-xs font-semibold px-3 py-1.5 rounded-lg bg-emerald-500/15 text-emerald-400 hover:bg-emerald-500/25 transition flex items-center space-x-1">
+                  <span>📑 Open Slides (PDF)</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -1550,6 +1621,23 @@
       const lec = lectures[idx];
       document.getElementById('current-lec-badge').textContent = `Lezione ${lec.num}`;
       document.getElementById('current-lec-date').textContent = lec.date;
+
+      const slideMap = {
+        "01": "slides/I. Introduzione.pdf",
+        "02": "slides/I. Introduzione.pdf",
+        "03": "slides/II.1 Immagine e somiglianza.pdf",
+        "04": "slides/II.1 Immagine e somiglianza.pdf",
+        "05": "slides/Giovanni e Paolo.pdf"
+      };
+      const sBtn = document.getElementById('current-lec-slides-btn');
+      if (sBtn) {
+        if (slideMap[lec.num]) {
+          sBtn.href = slideMap[lec.num];
+          sBtn.style.display = 'inline-flex';
+        } else {
+          sBtn.style.display = 'none';
+        }
+      }
 
       updateLectureView();
       renderLectureList();
