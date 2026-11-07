@@ -791,3 +791,100 @@ Technocracy views creation as brute, passive matter to manipulate for utility an
 
 ---
 
+### Card 102: What is the vital distinction among the Greek terms bios, psychē, and zoē in the New Testament, especially in the Johannine corpus?
+- **Front:** What is the vital distinction among the Greek terms bios, psychē, and zoē in the New Testament, especially in the Johannine corpus?
+- **Back:** <b>Bios (βίος):</b> Earthly, biological, temporal existence and worldly livelihood (1 Jn 2:16, 3:17);<br><b>Psychē (ψυχή):</b> The animate breath or psychological life-principle of mortal creatures;<br><b>Zoē (ζωή):</b> The uncreated, divine life of God Himself, possessed eternally by the Father and communicated through the Son (Jn 5:26: <i>"Sicut Pater habet vitam in semetipso, sic dedit et Filio vitam habere in semetipso"</i>). <i>Zoē aiōnios</i> is not endless biological duration, but supernatural communion in Trinitarian life.
+- 🧠 **Mnemonic:** <b>B-P-Z:</b> <b>B</b>ios = <b>B</b>iological survival; <b>P</b>sychē = <b>P</b>sychological breath; <b>Z</b>oē = <b>Z</b>enith of divine, uncreated life.
+
+---
+
+### Card 103: What is 'Realised Eschatology' in the Fourth Gospel, and what scriptural loci demonstrate it against purely future eschatology?
+- **Front:** What is 'Realised Eschatology' in the Fourth Gospel, and what scriptural loci demonstrate it against purely future eschatology?
+- **Back:** In St John, eternal life is not merely a deferred future promise, but an immediate, present ontological possession through faith and the sacraments.<br><br><b>Key Loci:</b><br>1. <b>John 5:24:</b> <i>"Qui credit in me, habet vitam aeternam... et transiit a morte in vitam"</i> (Present tense <i>habet</i>; perfect tense <i>transiit</i>: judgment is already anticipated and life is possessed now);<br>2. <b>John 4:14:</b> The living water welling up into eternal life (<i>fons aquae salientis in vitam aeternam</i>);<br>3. <b>John 11:25-26:</b> <i>"Ego sum resurrectio et vita; qui credit in me... non morietur in aeternum"</i>.
+- 🧠 **Mnemonic:** <b>The Present Possession:</b> In John, the believer doesn't merely hope to live tomorrow; he <i>already has</i> (habet) the divine life today.
+
+---
+
+### Card 104: How does Christian revelation resolve the Aristotelian impossibility of divine friendship (Philia) through Agape?
+- **Front:** How does Christian revelation resolve the Aristotelian impossibility of divine friendship (Philia) through Agape?
+- **Back:** In the <i>Nicomachean Ethics</i> (Book VIII), Aristotle argued that true friendship (<i>philia</i>) requires mutual reciprocity (<i>antiphilēsis</i>) and proportional equality (<i>isotēs</i>), rendering friendship between mortal man and the distant Unmoved Mover an ontological impossibility.<br><br><b>Christian Resolution:</b> God loves first through unmerited, unilateral <i>agape</i> (1 Jn 4:10, 19: <i>"Ipse prior dilexit nos"</i>); through the infusion of sanctifying grace and divine life (<i>zoē</i>), He ontologically elevates the creature, establishing the supernatural equality and reciprocity of love that makes genuine divine friendship possible (Jn 15:15: <i>"Vos autem dixi amicos"</i>).
+- 🧠 **Mnemonic:** <b>Agape Bridges the Abyss to Philia:</b> Unilateral divine love creates the supernatural equality that Aristotle declared impossible.
+
+---
+
+### Card 105: What does the Greek verb katalambanō reveal regarding divine initiative and ascetical striving in Philippians 3:12?
+- **Front:** What does the Greek verb katalambanō reveal regarding divine initiative and ascetical striving in Philippians 3:12?
+- **Back:** <i>"Sequor autem si quo modo comprehendam, in quo et comprehensus sum a Christo Iesu"</i> (Phil 3:12).<br><br><b>Katalambanō (καταλαμβάνω):</b> literally means to seize vigorously, to tackle, or to overtake from behind. St Paul pictures himself as a runner in a stadium who does not sprint by native stamina to capture Christ or earn salvation; rather, Christ tackled and seized Paul from behind on the road to Damascus. Ascetical striving is real, but it is entirely a free response born from having been previously seized by prevenient grace (<i>gratia praeveniens</i>).
+- 🧠 **Mnemonic:** <b>Tackled from Behind:</b> We only sprint to grasp Christ because Christ first seized (<i>comprehensus sum</i>) us on the road.
+
+---
+
+### Card 106: What is the meaning of 'Works of the Law' (Erga Nomou) in the New Perspective on Paul, and how does Catholic theology interpret it?
+- **Front:** What is the meaning of 'Works of the Law' (Erga Nomou) in the New Perspective on Paul, and how does Catholic theology interpret it?
+- **Back:** <b>New Perspective on Paul (Sanders, Dunn, Wright, 4QMMT):</b> <i>Erga Nomou</i> designated the distinct Jewish <b>social boundary markers</b> (circumcision, dietary laws/kashrut, sabbath observance) that separated the covenant nation from Gentile pagans. Paul rejects the Judaizers' insistence that Gentiles must adopt Jewish ethnic rituals to belong to God's family.<br><br><b>Catholic Synthesis:</b> While recognizing these ceremonial boundary markers, Catholic dogma (Aquinas, Trent) adds that even the <b>moral precepts</b> of the Law (the Decalogue) cannot justify by themselves (<i>sine gratia</i>). The written commandment reveals sin, but confers no internal healing power to cure concupiscence.
+- 🧠 **Mnemonic:** <b>Boundary Markers + Bare Letters Cannot Heal:</b> Circumcision and dietary laws do not save, and bare moral rules without grace cannot cure the fallen heart.
+
+---
+
+### Card 107: How does the Council of Trent harmonise St Paul (Romans 3:28) and St James (James 2:24) through the concept of Fides Caritate Formata?
+- **Front:** How does the Council of Trent harmonise St Paul (Romans 3:28) and St James (James 2:24) through the concept of Fides Caritate Formata?
+- **Back:** 1. <b>Initial Justification (Iustificatio Prima, Rom 3:28):</b> In baptism, neither faith nor works merit justification; it is granted purely gratis by divine mercy. Faith is the root and foundation (<i>radix et fundamentum</i>).<br>2. <b>Progressive Justification / Growth (Iustificatio Secunda, James 2:24):</b> Through works of charity performed in grace, the justified person truly cooperates with the Spirit, and righteousness is increased (<i>augmentum iustificationis</i>).<br>3. <b>Fides Caritate Formata (Gal 5:6):</b> Bare faith without charity is unformed (<i>fides informis</i>) and dead. Charity is the <b>intrinsic form of faith</b> (<i>forma fidei</i>), animating faith into living, meritorious action.
+- 🧠 **Mnemonic:** <b>Initial by Mercy, Increase by Charity:</b> Paul speaks of the root (initial grace); James speaks of the living, formed fruit (increase in charity).
+
+---
+
+### Card 108: How does St. Thomas Aquinas define the essence of the New Law (Lex Nova) in Summa Theologiae I-II, q. 106, a. 1?
+- **Front:** How does St. Thomas Aquinas define the essence of the New Law (Lex Nova) in Summa Theologiae I-II, q. 106, a. 1?
+- **Back:** <i>"Id quod est potissimum in lege novi testamenti, et in quo tota virtus eius consistit, est gratia Spiritus Sancti, quae datur per fidem Christi. Et ideo principaliter lex nova est ipsa gratia Spiritus Sancti, quae datur Christi fidelibus."</i><br><br>1. <b>Principaliter (Primarily):</b> The New Law is <b>the very grace of the Holy Spirit infused into hearts</b>, giving internal supernatural power to love.<br>2. <b>Secundario (Secondarily):</b> It contains written texts (Gospels, moral teachings, sacraments) that dispose the soul and direct actions.<br><br>If the Gospel were merely written commands, it would be a killing letter (<i>littera occidens</i>).
+- 🧠 **Mnemonic:** <b>The Law is a Person/Power, Not Paper:</b> Primarily the Spirit's internal grace; secondarily the written text.
+
+---
+
+### Card 109: How does St. Thomas Aquinas employ the analogy of the illuminated air (aer illuminatus a sole) to explain sanctifying grace (ST I-II, q. 110, a. 2)?
+- **Front:** How does St. Thomas Aquinas employ the analogy of the illuminated air (aer illuminatus a sole) to explain sanctifying grace (ST I-II, q. 110, a. 2)?
+- **Back:** 1. <b>The Analogy:</b> The Sun possesses light essentially (<i>per essentiam</i>). The Air is dark by nature but transparent. When solar rays strike the air, it participates in sunlight and becomes formally illuminated (<i>aer fit illuminatus</i>).<br>2. <b>Real Inherent Transfiguration:</b> The brightness of the air is real and physical, not an optical illusion (refuting purely external forensic justification).<br>3. <b>Preservation of Natures (Anti-Pantheism):</b> The air never turns into the sun; human nature remains created, even while divinized (<i>consortes divinae naturae</i>).<br>4. <b>Radical Dependency:</b> The moment the sun is removed, the air reverts to darkness. Grace requires the continuous, unceasing indwelling of God.
+- 🧠 **Mnemonic:** <b>Air is not Sun, but Truly Shines:</b> Real inner transformation without pantheistic confusion; always dependent on the Light.
+
+---
+
+### Card 110: What are the four hierarchical degrees of creaturely likeness to God in St. Thomas Aquinas (ST III, q. 23, artt. 1-3)?
+- **Front:** What are the four hierarchical degrees of creaturely likeness to God in St. Thomas Aquinas (ST III, q. 23, artt. 1-3)?
+- **Back:** 1. <b>Per Vestigium (Vestige/Trace):</b> Inanimate/irrational creatures (Job 38:28: God as father of the rain); causal origin only, no personal reciprocity.<br>2. <b>Per Imaginem (Natural Image):</b> Rational human nature (intellect and will); capacity for truth and natural goodness (<i>capax Dei</i>).<br>3. <b>Per Gratiam / Adoptionem (Grace/Adoption):</b> The baptised in sanctifying grace; formal assimilation to the eternal Sonship of the Word (<i>filii in Filio</i>), heirs of eternal life.<br>4. <b>Per Gloriam (Glory Consummated):</b> The blessed in Heaven; direct fruition in the Beatific Vision through the <i>lumen gloriae</i>.
+- 🧠 **Mnemonic:** <b>V-I-G-G:</b> <b>V</b>estige (Inanimate) -> <b>I</b>mage (Human Mind) -> <b>G</b>race (Adopted Son) -> <b>G</b>lory (Heavenly Heir).
+
+---
+
+### Card 111: What is the theological significance of Christ's proclamation in John 20:17: 'Ascendo ad Patrem meum et Patrem vestrum'?
+- **Front:** What is the theological significance of Christ's proclamation in John 20:17: 'Ascendo ad Patrem meum et Patrem vestrum'?
+- **Back:** Christ establishes an irreducible qualitative asymmetry between His divine Sonship and ours:<br>1. <b>Refutes Adoptionism:</b> Christ is the Son <b>by eternal nature</b> (<i>per naturam</i>), consubstantial with the Father; He is never an adopted son.<br>2. <b>Refutes Pantheism:</b> The Father is our Father <b>by grace and adoption</b> (<i>per gratiam et adoptionem</i>). Our sonship is created, participated, and derivative.<br>3. <b>No Collective 'Our Father':</b> Christ never unites Himself with the disciples to pray an undifferentiated 'Our Father'; the Lord's Prayer (Matt 6:9) is the specific prayer given to adopted creatures.
+- 🧠 **Mnemonic:** <b>My Father by Nature, Your Father by Grace:</b> The unbridgeable chasm between the Only-Begotten and the adopted brethren.
+
+---
+
+### Card 112: What are the philological and theological characteristics of the Aramaic vocative Abbà (Mark 14:36; Rom 8:15; Gal 4:6) according to Joachim Jeremias?
+- **Front:** What are the philological and theological characteristics of the Aramaic vocative Abbà (Mark 14:36; Rom 8:15; Gal 4:6) according to Joachim Jeremias?
+- **Back:** 1. <b>Domestic Affection & Reverence:</b> Originating in infant domestic speech (akin to 'papa' or 'babbo'), it was used within the intimate family hearth, combining tender familiarity with profound filial respect.<br>2. <b>Historical Breakthrough:</b> Completely unprecedented in ancient Jewish prayer, where addressing the transcendent Lord as <i>Abbà</i> was deemed irreverent and scandalous.<br>3. <b>Ipsissima Vox Iesu:</b> Preserved untranslated in the Greek NT, proving it was Christ's authentic signature address manifesting His uninterrupted filial consciousness.<br>4. <b>Pneumatological Gift:</b> In Rom 8:15 and Gal 4:6, the Holy Spirit is sent into Christian hearts specifically to echo this identical Christological cry.
+- 🧠 **Mnemonic:** <b>From Babbling Child to Gethsemane's Cry:</b> The domestic intimacy of the Son poured into our hearts by the Spirit.
+
+---
+
+### Card 113: Distinguish the Greek terms Huios, Teknon, and Huiothesia in the New Testament theology of sonship.
+- **Front:** Distinguish the Greek terms Huios, Teknon, and Huiothesia in the New Testament theology of sonship.
+- **Back:** 1. <b>Huios (υἱός):</b> Mature son and legal heir. Reserved in the singular <b>strictly for Jesus Christ</b> (<i>ho Huios tou Theou</i>); used in the plural for Christians elevated to legal heirs.<br>2. <b>Teknon (τέκνον):</b> Offspring by birth or generation (from <i>tiktō</i>), denoting vital communion. Used in the plural for believers (<i>tekna Theou</i>, Jn 1:12; 1 Jn 3:1); <b>never applied to Christ in the singular in John</b>, protecting His uncreated origin.<br>3. <b>Huiothesia (υἱοθεσία):</b> Exclusively Pauline legal term; formal adoption of an outsider into a family with full inheritance rights (Gal 4:5; Rom 8:15).
+- 🧠 **Mnemonic:** <b>Huios is Heir, Teknon is Born, Huiothesia is Adopted:</b> Christ is the singular Huios; we are born as Tekna and legally elevated by Huiothesia.
+
+---
+
+### Card 114: How does St. Thomas Aquinas harmonise the indivisible external action of the Trinity with the distinct personal terminus of adoptive grace (ST III, q. 23, a. 2)?
+- **Front:** How does St. Thomas Aquinas harmonise the indivisible external action of the Trinity with the distinct personal terminus of adoptive grace (ST III, q. 23, a. 2)?
+- **Back:** <b>The Principle:</b> <i>"Opera Trinitatis ad extra sunt indivisa"</i> (All external works of God proceed from the single divine essence shared by the three Persons). Efficiently, the entire Trinity produces grace in the soul.<br><br><b>The Personal Terminus:</b> The effect of grace terminates in a distinct, real personal relation to each Person:<br>1. <b>Patri ut auctori:</b> Adopted by the Father as origin;<br>2. <b>Filio ut exemplari:</b> Conformed to the Son as archetype and elder brother (<i>filii in Filio</i>);<br>3. <b>Spiritui Sancto ut imprimenti:</b> Inhabited by the Spirit who imprints this filial likeness and cries <i>Abbà</i>.
+- 🧠 **Mnemonic:** <b>One Power, Three Personal Welcomes:</b> The Trinity acts as One, but welcomes us into distinct personal communion with Father, Son, and Spirit.
+
+---
+
+### Card 115: What is the status of the baptismal character (character baptismalis) in a Christian who falls into mortal sin (e.g. the Prodigal Son of Luke 15)?
+- **Front:** What is the status of the baptismal character (character baptismalis) in a Christian who falls into mortal sin (e.g. the Prodigal Son of Luke 15)?
+- **Back:** 1. <b>Loss of Sanctifying Grace:</b> Mortal sin extinguishes habitual grace and charity, forfeiting the actual possession of the heavenly inheritance.<br>2. <b>Permanence of the Character:</b> Baptism imprints an <b>indelible spiritual seal</b> (<i>character indelebilis</i>) configuring the soul permanently to Christ the Son and Priest.<br>3. <b>The Prodigal Son (Luke 15:11-32):</b> Even among swine in exile, having squandered his inheritance, the prodigal remains ontologically a son (<i>"Filius meus hic erat"</i>). The baptismal character remains as the indelible root of filiation, enabling the sinner to return and be restored to grace in Penance.
+- 🧠 **Mnemonic:** <b>The Seal that Sin Cannot Scrape Away:</b> You can lose your inheritance through sin, but you never cease to be marked as a child of the King.
+
+---
