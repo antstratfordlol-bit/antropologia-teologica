@@ -888,3 +888,248 @@ Technocracy views creation as brute, passive matter to manipulate for utility an
 - 🧠 **Mnemonic:** <b>The Seal that Sin Cannot Scrape Away:</b> You can lose your inheritance through sin, but you never cease to be marked as a child of the King.
 
 ---
+
+### Card 116: How does Roman civil adoption (e.g. Augustus/Octavian) differ fundamentally from Christian divine adoption (ST III, q. 23)?
+- **Front:** How does Roman civil adoption (e.g. Augustus/Octavian) differ fundamentally from Christian divine adoption (ST III, q. 23)?
+- **Back:** <b>Roman Civil Adoption (<i>Invenit Idoneum</i>):</b> Discovers a worthy, already noble candidate and confers an external legal title and family name without altering his inner nature.<br><br><b>Christian Divine Adoption (<i>Facit Idoneum</i>):</b> God does not find us worthy; He <i>makes</i> us worthy through the infusion of sanctifying grace, ontologically transforming our nature into real participation in the Son's eternal filiation (<i>filii in Filio</i>).
+- 🧠 **Mnemonic:** <b>Invenit vs. Facit:</b> Rome <i>finds</i> an heir; God <i>forges</i> a child.
+
+---
+
+### Card 117: What is the cosmic dimension of Christian divine adoption in Romans 8:19-23?
+- **Front:** What is the cosmic dimension of Christian divine adoption in Romans 8:19-23?
+- **Back:** Creation was subjected to futility not by its own fault, but because of humanity's fall, and now groans in labour pains (<i>syngeneia / dolores partus</i>) awaiting the <b>revelation of the children of God</b>.<br><br><b>Theological Meaning:</b> Because man is the microcosm and priestly mediator of the material universe, the glorification of God's adopted children (redemption of our bodies) brings the entire cosmos into liberation from corruption and into eternal transfiguration.
+- 🧠 **Mnemonic:** <b>As Goes the Heir, So Goes the Estate:</b> Creation groans in labour until the children of God shine in glory.
+
+---
+
+### Card 118: How does Rembrandt's 'Return of the Prodigal Son' visually synthesise divine paternity and maternity?
+- **Front:** How does Rembrandt's 'Return of the Prodigal Son' visually synthesise divine paternity and maternity?
+- **Back:** In Rembrandt's painting, the Father's two hands resting upon the kneeling son's shoulders are deliberately asymmetrical: one hand is broad, muscular, and masculine (protecting and conferring royal authority), while the other is slender, tender, and feminine (caressing and welcoming).<br><br><b>Theological Insight:</b> Following Isaiah 49:15 and Catechism 239, God transcends human gender yet encompasses both paternal strength and maternal tenderness (<i>compassion / rahamim</i>) in His forgiving love.
+- 🧠 **Mnemonic:** <b>Two Hands of Mercy:</b> Paternal strength to reinstate; maternal tenderness to embrace.
+
+---
+
+### Card 119: How do the 'Masters of Suspicion' (Feuerbach, Marx, Freud) misinterpret divine paternity, and how does Christian filiation refute them?
+- **Front:** How do the 'Masters of Suspicion' (Feuerbach, Marx, Freud) misinterpret divine paternity, and how does Christian filiation refute them?
+- **Back:** 1. <b>Feuerbach:</b> God is a projection of alienated human perfection;<br>2. <b>Marx:</b> Religion is an opiate pacifying the oppressed;<br>3. <b>Freud:</b> The 'Father' is an infantile neurotic projection of the Oedipus complex.<br><br><b>Christian Refutation:</b> Divine filiation does not infantilise or enslave man; rather, it redeems human freedom from sin (Gal 5:1: <i>'For freedom Christ has set us free'</i>) and elevates man to royal co-heirship and mature friendship with God.
+- 🧠 **Mnemonic:** <b>Projection vs. Elevation:</b> Suspicion sees a tyrant suppressing adults; the Gospel reveals a Father raising heirs.
+
+---
+
+### Card 120: How does St. Thomas Aquinas contrast human love and divine love in Summa Theologiae I, q. 20, a. 2?
+- **Front:** How does St. Thomas Aquinas contrast human love and divine love in Summa Theologiae I, q. 20, a. 2?
+- **Back:** <b>Human Love (Responsive):</b> Our love is evoked and caused by goodness already existing in the beloved object (<i>amor noster provocatur a bono in re</i>).<br><br><b>Divine Love (Creative):</b> God's love does not find pre-existing goodness; it <b>infuses and creates goodness in things</b> (<i>amor Dei est infundens et creans bonitatem in rebus</i>). In grace (<i>amor specialis</i>), God not only renders the soul loved (<i>amata</i>), but active in loving Him back (<i>amantem</i>).
+- 🧠 **Mnemonic:** <b>Man Discovers Beauty; God Creates It:</b> God's gaze makes the soul lovely.
+
+---
+
+### Card 121: What are the three modalities of God's presence in creation according to St. Thomas Aquinas (ST I, q. 8, a. 3; q. 43, a. 3)?
+- **Front:** What are the three modalities of God's presence in creation according to St. Thomas Aquinas (ST I, q. 8, a. 3; q. 43, a. 3)?
+- **Back:** 1. <b>Praesentia Immensitatis (Presence of Immensity):</b> Universal creative conservation of all creatures <i>per essentiam, praesentiam, potentiam</i>;<br>2. <b>Praesentia Unionis (Presence of Union):</b> The singular, unrepeatable Hypostatic Union of divine and human natures in the Person of Christ;<br>3. <b>Praesentia Inhabitationis (Presence of Indwelling):</b> The personal indwelling of the Trinity in the justified soul (Jn 14:23), present as the known in the knower and the loved in the lover (<i>sicut cognitum in cognoscente et amatum in amante</i>).
+- 🧠 **Mnemonic:** <b>I-U-I:</b> <b>I</b>mmensity (Everywhere), <b>U</b>nion (Christ alone), <b>I</b>ndwelling (Souls in grace).
+
+---
+
+### Card 122: Distinguish precisely between Uncreated Grace (Gratia Increata) and Created Grace (Gratia Creata).
+- **Front:** Distinguish precisely between Uncreated Grace (Gratia Increata) and Created Grace (Gratia Creata).
+- **Back:** <b>Gratia Increata:</b> God Himself (specifically the Holy Spirit, and through Him the entire Trinity) self-given in Person to the soul (Rom 5:5). It is the <b>efficient, exemplary, and final cause</b> of indwelling.<br><br><b>Gratia Creata:</b> The real, permanent ontological transformation produced within the creature's soul (<i>habitus entitativus</i> and infused charity). It is the <b>formal cause</b> adapting the finite soul to receive and enjoy the Infinite Guest.
+- 🧠 **Mnemonic:** <b>The Guest vs. The Furnished Room:</b> Uncreated Grace is the Divine Guest; Created Grace is the soul's interior transformation to host Him.
+
+---
+
+### Card 123: What was Peter Lombard's error regarding charity (I Sent., d. 17), and how did St. Thomas Aquinas refute it?
+- **Front:** What was Peter Lombard's error regarding charity (I Sent., d. 17), and how did St. Thomas Aquinas refute it?
+- **Back:** <b>Lombard's Thesis:</b> He claimed that the charity by which we love God and neighbour is not a created virtue inhering in the soul, but the Holy Spirit Himself acting directly without an intermediate created habitus.<br><br><b>Aquinas' Refutation (ST II-II, q. 23, a. 2):</b> If there were no created habitus elevating our will, human acts of love would be purely divine operations bypassing human freedom, reducing man to a passive puppet and destroying authentic human merit and personal subjectivity.
+- 🧠 **Mnemonic:** <b>No Puppet Love:</b> Without created charity, it isn't <i>you</i> loving God; the Spirit would be loving Himself through a hollow shell.
+
+---
+
+### Card 124: How does St. Thomas use the analogy of 'iron glowing in the fire' (ferrum ignitum) to answer Gregory Palamas' distinction between divine essence and uncreated energies?
+- **Front:** How does St. Thomas use the analogy of 'iron glowing in the fire' (ferrum ignitum) to answer Gregory Palamas' distinction between divine essence and uncreated energies?
+- **Back:** <b>Gregory Palamas (Hesychasm):</b> Distinguished God's unknowable essence (<i>ousia</i>) from uncreated divine energies (<i>energeiai</i>) to protect divine transcendence while affirming real deification.<br><br><b>Thomistic Synthesis:</b> Just as cold iron placed in a furnace genuinely radiates heat and light (a real, created physical participation in fire) without turning into the substance of fire, so created grace is a real, deifying participation in the divine nature without pantheistic confusion or dividing the simple divine essence.
+- 🧠 **Mnemonic:** <b>Glowing Iron:</b> Iron truly burns and shines, yet remains iron; man truly shares divine life, yet remains creature.
+
+---
+
+### Card 125: How does the analogy of the 'platonic celebrity crush' versus 'true reciprocal friendship' explain Fruitio Dei?
+- **Front:** How does the analogy of the 'platonic celebrity crush' versus 'true reciprocal friendship' explain Fruitio Dei?
+- **Back:** In intentional presence, one can think constantly about an unreachable celebrity without any mutual bond. In real communion, both friends share an authentic mutual presence.<br><br><b>Theological Meaning:</b> Trinitarian indwelling grants more than mental thought about God; through created grace and charity, the soul touches God in His real substance and attains <b>Fruitio Dei</b> (joyful possession and enjoyment of the Trinity in friendship).
+- 🧠 **Mnemonic:** <b>Intentional Thought vs. Real Embrace:</b> Grace turns distant contemplation into reciprocal friendship (<i>frui Deo</i>).
+
+---
+
+### Card 126: In the Trinitarian missions of indwelling (ST I, q. 43, a. 5), what distinct personal marks correspond to the Son and the Holy Spirit?
+- **Front:** In the Trinitarian missions of indwelling (ST I, q. 43, a. 5), what distinct personal marks correspond to the Son and the Holy Spirit?
+- **Back:** Although external divine acts are indivisible (<i>opera Trinitatis ad extra sunt indivisa</i>), indwelling assimilates the soul distinctly to the two sent Persons:<br>1. <b>The Son:</b> Not just any Word, but the <i>Verbum spirans amorem</i> (the Word breathing forth Love), illuminating the intellect with filial wisdom;<br>2. <b>The Holy Spirit:</b> <i>Amor personalis et Donum</i> (Personal Love and Gift), inflaming the will in charity.
+- 🧠 **Mnemonic:** <b>Wisdom Breathing Love & Personal Gift:</b> The Son enlightens the mind; the Spirit sets the will ablaze.
+
+---
+
+### Card 127: Why does St. Thomas Aquinas classify created grace as an 'accidental quality' (accidens qualitatis) rather than a substance (ST I-II, q. 110, a. 2)?
+- **Front:** Why does St. Thomas Aquinas classify created grace as an 'accidental quality' (accidens qualitatis) rather than a substance (ST I-II, q. 110, a. 2)?
+- **Back:** <b>Substance (Ens in se):</b> Exists in itself. If grace were a substance, infusing grace would either abolish human identity (pantheism) or sit beside man like a foreign object (extrinsicism).<br><br><b>Supernatural Accident (Ens in alio):</b> Grace is a supernatural accidental quality inhering in the soul according to its <b>obediential potency</b> (<i>potentia obedientialis</i>), elevating human nature from within without destroying its created substance.
+- 🧠 **Mnemonic:** <b>Accident Protects Identity:</b> An accident is not trivial; it means God transforms <i>you</i> without erasing <i>you</i>.
+
+---
+
+### Card 128: Rigorously distinguish between Gratia Gratum Faciens and Gratia Gratis Data (ST I-II, q. 111, a. 1).
+- **Front:** Rigorously distinguish between Gratia Gratum Faciens and Gratia Gratis Data (ST I-II, q. 111, a. 1).
+- **Back:** 1. <b>Gratia Gratum Faciens (Sanctifying Grace):</b> Grace making the recipient pleasing to God; inseparable from charity, directly sanctifying and deifying the soul (<i>ad sanctificationem recipientis</i>).<br>2. <b>Gratia Gratis Data (Charismatic Grace):</b> From Matt 10:8 (<i>gratis accepistis, gratis date</i>); gifts (prophecy, tongues, miracles, healing; 1 Cor 12) given instrumentally for the <b>edification of others</b> (<i>ad aedificationem Ecclesiae</i>).<br><br><b>Critical Asymmetry:</b> A person can exercise extraordinary charisms while spiritually dead in mortal sin (1 Cor 13:1-3; Matt 7:22-23).
+- 🧠 **Mnemonic:** <b>Megaphone vs. Heart:</b> A hollow brass megaphone proclaims the King's message (<i>gratis data</i>), while only charity makes the herald a friend of the King (<i>gratum faciens</i>).
+
+---
+
+### Card 129: What does it mean that habitual grace sanctifies the 'essence' of the soul, whereas actual grace does not (ST I-II, q. 110, a. 4)?
+- **Front:** What does it mean that habitual grace sanctifies the 'essence' of the soul, whereas actual grace does not (ST I-II, q. 110, a. 4)?
+- **Back:** Governed by the axiom <b><i>agere sequitur esse</i></b> (action follows being):<br>1. <b>Habitual Grace (Habitus Entitativus):</b> Resides permanently in the <b>essence of the soul</b> (<i>essentia animae</i>), conferring a new supernatural state of being (<i>esse</i>) that renders the person inherently holy.<br>2. <b>Actual Grace (Motio Transiens):</b> A transient divine impulse acting directly upon the <b>operative faculties</b> (<i>potentiae animae</i>: illuminating the intellect and stirring the will) for a singular act.<br><br>A sinner in mortal sin receives actual graces to repent, yet his essence remains unsanctified until habitual grace is infused.
+- 🧠 **Mnemonic:** <b>Being vs. Nudge:</b> Habitual grace transforms the <i>root</i> (essence); actual grace nudges the <i>branches</i> (faculties).
+
+---
+
+### Card 130: How does St. Thomas justify the convenience of an abiding habitual grace using the law of divine connaturality (ST I-II, q. 110, a. 3)?
+- **Front:** How does St. Thomas justify the convenience of an abiding habitual grace using the law of divine connaturality (ST I-II, q. 110, a. 3)?
+- **Back:** In the natural order, God equips creatures with intrinsic principles so they reach their ends easily and joyfully (e.g. birds have wings to fly, plants have chlorophyll).<br><br><b>Supernatural Application:</b> God does not push His children toward heaven like mechanical puppets via external force; He infuses an enduring <b>entitative habitus</b> so that supernatural love becomes connatural, enabling the soul to act <i>faciliter, connaturaliter, et delectabiliter</i> (with ease, spontaneity, and joy).
+- 🧠 **Mnemonic:** <b>Wings for the Swallow:</b> Grace gives the soul spiritual wings so holiness feels like flying, not being catapulted.
+
+---
+
+### Card 131: What is the theological distinction between Prevenient Grace (Gratia Praeveniens) and Subsequent Grace (Gratia Subsequens) in ST I-II, q. 111, a. 3?
+- **Front:** What is the theological distinction between Prevenient Grace (Gratia Praeveniens) and Subsequent Grace (Gratia Subsequens) in ST I-II, q. 111, a. 3?
+- **Back:** Grace is termed prevenient or subsequent relative to a sequence of five continuous divine effects:<br>1. Healing the soul (prevenient to conversion);<br>2. Willing the good (subsequent to healing, prevenient to action);<br>3. Executing the good deed;<br>4. Persevering in the good;<br>5. Attaining eternal glory (the crown of all subsequent grace).
+- 🧠 **Mnemonic:** <b>Heal -> Will -> Act -> Persevere -> Glory:</b> Every grace is subsequent to the gift before it and prevenient to the step ahead.
+
+---
+
+### Card 132: How do the Theological Virtues differ essentially from Moral Virtues regarding their immediate object (ST I-II, q. 62, a. 1)?
+- **Front:** How do the Theological Virtues differ essentially from Moral Virtues regarding their immediate object (ST I-II, q. 62, a. 1)?
+- **Back:** 1. <b>Theological Virtues (Fides, Spes, Caritas):</b> Have <b>God Himself</b> as their immediate, direct object (<i>habent Deum pro obiecto</i>), residing in the intellect (Faith) and will (Hope, Charity). They admit of no excess.<br>2. <b>Moral Virtues (Prudence, Justice, Fortitude, Temperance):</b> Have as their object the <b>created means</b> ordered toward the end (<i>ea quae sunt ad finem</i>), regulating human actions and passions according to a rational or divine measure.
+- 🧠 **Mnemonic:** <b>Destination vs. Vehicle:</b> Theological virtues lay hold of God Himself (the Destination); moral virtues steer the passions and means (the Vehicle).
+
+---
+
+### Card 133: Explain the 'blind man touching the table' analogy for the virtue of Faith (ST II-II, q. 1, a. 4).
+- **Front:** Explain the 'blind man touching the table' analogy for the virtue of Faith (ST II-II, q. 1, a. 4).
+- **Back:** Faith is an obscure, enigmatic knowledge (<i>in speculo atque in aenigmate</i>, 1 Cor 13:12). Like a blind person seated at an oak table, the believer cannot optically see the divine essence (vision belongs to glory). Yet through dogmatic truths, Scripture, and sacraments, the intellect illumined by grace truly <b>touches</b> the substantial, undeniable reality of the Living God.
+- 🧠 **Mnemonic:** <b>Real Touch in the Dark:</b> Faith lacks visual sight, yet possesses undeniable tactile contact with divine reality.
+
+---
+
+### Card 134: What does Prof.ssa Vial's 'Justin Bieber' analogy illustrate regarding the virtue of Faith?
+- **Front:** What does Prof.ssa Vial's 'Justin Bieber' analogy illustrate regarding the virtue of Faith?
+- **Back:** A dedicated fan may memorize every biographical detail, song lyric, and travel schedule of a pop idol, yet remain a total stranger with zero mutual communion.<br><br><b>Theological Point:</b> Faith is not collecting doctrinal trivia about a distant God (even demons believe and shudder, Jas 2:19). True faith is <b><i>cognitio amorosa</i></b>: personal, loving adherence opening into living friendship with the Trinity.
+- 🧠 **Mnemonic:** <b>Fan Data vs. Friend Presence:</b> Orthodoxy without love is celebrity trivia; living faith is mutual friendship.
+
+---
+
+### Card 135: How does St. Thomas define Charity as 'Amicitia Dei' (ST II-II, q. 23, a. 1), and what three conditions does friendship require?
+- **Front:** How does St. Thomas define Charity as 'Amicitia Dei' (ST II-II, q. 23, a. 1), and what three conditions does friendship require?
+- **Back:** Charity is true friendship between man and God (<i>amicitia quaedam hominis ad Deum</i>), requiring:<br>1. <b>Benevolence (<i>Benevolentia</i>):</b> Loving God for His own sake, not merely for utility or pleasure;<br>2. <b>Mutual Reciprocity (<i>Reciprocatio</i>):</b> Love shared and returned between both persons;<br>3. <b>Common Fellowship (<i>Communicatio</i>):</b> Founded upon God communicating to us His own eternal beatitude (<i>communicatio beatitudinis</i>).
+- 🧠 **Mnemonic:** <b>B-R-C of Friendship:</b> <b>B</b>enevolence, <b>R</b>eciprocity, <b>C</b>ommunicated Beatitude.
+
+---
+
+### Card 136: What are the four notes of the object of Theological Hope in ST II-II, q. 17, a. 1?
+- **Front:** What are the four notes of the object of Theological Hope in ST II-II, q. 17, a. 1?
+- **Back:** <b><i>Bonum futurum, arduum, possibile haberi per auxilium divinum:</i></b><br>1. <b>Bonum:</b> Eternal beatitude and union with God;<br>2. <b>Futurum:</b> Not yet possessed in full vision (Rom 8:24);<br>3. <b>Arduum:</b> Exceeding human power, beset by trials;<br>4. <b>Possibile per auxilium divinum:</b> Attainable not by proud self-reliance (presumption), but solely through God's omnipotence and faithful promises.
+- 🧠 **Mnemonic:** <b>Good-Future-Hard-Possible:</b> Difficult by nature, yet assured by divine help.
+
+---
+
+### Card 137: How is the theological virtue of Hope connected to the faculty of Memory in St. Augustine and St. John of the Cross?
+- **Front:** How is the theological virtue of Hope connected to the faculty of Memory in St. Augustine and St. John of the Cross?
+- **Back:** 1. <b>St Augustine (Confessions X):</b> Memory is the vast interior palace (<i>lata praetoria memoriae</i>) holding desire and identity.<br>2. <b>St John of the Cross (Ascent III):</b> Just as Faith blinds the intellect and Charity inflames the will, <b>Hope purifies and empties the memory</b> of clinging to past temporal securities and nostalgia, anchoring the soul's expectation solely in its eternal inheritance (<i>hereditas Dei</i>).
+- 🧠 **Mnemonic:** <b>Three Purifications:</b> Faith -> Intellect; Charity -> Will; Hope -> Empties and elevates Memory.
+
+---
+
+### Card 138: Distinguish Infused Moral Virtues from Acquired Moral Virtues (ST I-II, q. 63, a. 3), and explain why ascetical effort remains necessary after Baptism.
+- **Front:** Distinguish Infused Moral Virtues from Acquired Moral Virtues (ST I-II, q. 63, a. 3), and explain why ascetical effort remains necessary after Baptism.
+- **Back:** <b>Infused Moral Virtues:</b> Bestowed by God with sanctifying grace; measured by the divine Gospel rule; confer the <b>supernatural capacity and ordination</b> toward heaven.<br><b>Acquired Moral Virtues:</b> Forged by repeated human acts; measured by natural reason; confer <b>psychological ease and promptness</b> (<i>facilitas in operando</i>).<br><br><b>Why Asceticism Matters:</b> Infused virtues are like a supersonic jet engine, but concupiscence (<i>fomes peccati</i>) leaves rocks on the runway. Acquired human habits clear the emotional friction so grace can take flight joyfully.
+- 🧠 **Mnemonic:** <b>Divine Engine + Human Runway:</b> Infused virtues give the supernatural thrust; acquired habits pave the runway.
+
+---
+
+### Card 139: Distinguish the mode of operation of the Infused Virtues from the Seven Gifts of the Holy Spirit (ST I-II, q. 68, a. 1).
+- **Front:** Distinguish the mode of operation of the Infused Virtues from the Seven Gifts of the Holy Spirit (ST I-II, q. 68, a. 1).
+- **Back:** <b>Infused Virtues:</b> Operate <b><i>modo humano</i></b> (human mode), under the deliberate guidance of human reason illumined by faith.<br><b>Seven Gifts (Isa 11:2):</b> Operate <b><i>modo divino</i></b> (divine mode), conferring immediate supernatural docility to the direct impulse of the Holy Spirit (<i>instinctus Spiritus Sancti</i>).<br><br><b>Analogy:</b> Virtues are like <b>rowing a boat</b> with rational effort; the Gifts are like <b>hoisting the sails</b> to let the mighty wind of the Spirit propel the vessel swiftly beyond human strength.
+- 🧠 **Mnemonic:** <b>Oars vs. Sails:</b> Virtues row <i>modo humano</i>; Gifts sail <i>modo divino</i>.
+
+---
+
+### Card 140: What was the Semi-Pelagian error regarding the Initium Fidei, and how did St. Augustine refute it?
+- **Front:** What was the Semi-Pelagian error regarding the Initium Fidei, and how did St. Augustine refute it?
+- **Back:** <b>Semi-Pelagian Thesis:</b> Conceded that grace is needed for salvation, but claimed the very first step toward God (the initial desire to believe or pray for help, <i>initium fidei</i>) springs solely from man's natural free will.<br><br><b>Augustinian Refutation (Ad Simplicianum, 397 AD; Orange II, 529 AD):</b> Grounded in 1 Cor 4:7 and Jn 6:44, even the initial desire to repent and ask for grace is already the fruit of God's prevenient, operating grace.
+- 🧠 **Mnemonic:** <b>Even the Knock is Grace:</b> Man cannot even knock on God's door unless God first moves his hand.
+
+---
+
+### Card 141: Define Gratia Operans and Gratia Cooperans (ST I-II, q. 111, a. 2) in both actual and habitual grace.
+- **Front:** Define Gratia Operans and Gratia Cooperans (ST I-II, q. 111, a. 2) in both actual and habitual grace.
+- **Back:** 1. <b>Gratia Operans (Operating Grace):</b> God alone produces the effect without our prior active initiative; the will is moved (<i>voluntas mota</i>). <i>Actual:</i> turning the sinful will to God (e.g. Paul at Damascus). <i>Habitual:</i> formally healing and justifying the soul's essence.<br>2. <b>Gratia Cooperans (Cooperating Grace):</b> The healed will actively collaborates with God; the will is both moved and moving (<i>voluntas mota et movens</i>). <i>Actual:</i> aiding concrete good deeds. <i>Habitual:</i> serving as the enduring principle of merit.
+- 🧠 **Mnemonic:** <b>Mota vs. Mota et Movens:</b> Operating turns the key; Cooperating drives the car together.
+
+---
+
+### Card 142: Why does Operating Grace (Gratia Operans) not violate or coerce human free will?
+- **Front:** Why does Operating Grace (Gratia Operans) not violate or coerce human free will?
+- **Back:** Coercion occurs only when two finite agents compete externally on the same ontological plane. God, however, is the transcendent Creator of human freedom, more intimate to the will than the will is to itself (<i>interior intimo meo</i>).<br><br>When God moves the fallen will from sin to good, He does not force it mechanically from outside, nor merely entice it emotionally; He heals sin's paralysis from within, <b>liberating freedom</b> so man can finally choose his true good.
+- 🧠 **Mnemonic:** <b>Not External Rival, but Internal Creator:</b> Grace heals the broken wing so the bird is free to fly.
+
+---
+
+### Card 143: How did late-medieval Nominalism (Potentia Dei Absoluta vs. Ordinata) pave the way for Martin Luther's reformation theology?
+- **Front:** How did late-medieval Nominalism (Potentia Dei Absoluta vs. Ordinata) pave the way for Martin Luther's reformation theology?
+- **Back:** Nominalists (Ockham, Biel) severed God's arbitrary omnipotence (<i>potentia absoluta</i>) from His wise established order (<i>potentia ordinata</i>), claiming God could arbitrarily save an unrepentant sinner without sanctifying grace or condemn one with charity.<br><br><b>Consequence:</b> This broke the intrinsic ontological link between charity and salvation, turning grace into a mere external legal token. Luther inherited this framework, discarded created grace (<i>habitus</i>) altogether, and taught forensic justification (<i>simul iustus et peccator</i>).
+- 🧠 **Mnemonic:** <b>Arbitrary Will Breaks Ontological Grace:</b> Nominalism detached grace from transformation; Luther threw out the empty shell.
+
+---
+
+### Card 144: What was Martin Luther's 'Turmerlebnis' (Tower Experience) regarding 'Iustitia Dei' in Romans 1:17?
+- **Front:** What was Martin Luther's 'Turmerlebnis' (Tower Experience) regarding 'Iustitia Dei' in Romans 1:17?
+- **Back:** Initially, Luther read <i>iustitia Dei</i> (righteousness of God) as God's active, punitive justice demanding impossible fulfillment of the Decalogue, filling him with terror before an angry Judge.<br><br>In the <i>Turmerlebnis</i>, he reinterpreted <i>iustitia Dei</i> passively: as the merciful righteousness that God externally imputes to the believer solely through faith (<i>sola fide</i>), covering interior sinfulness.
+- 🧠 **Mnemonic:** <b>Active Judge -> Passive Cloak:</b> From terrifying demand to external forensic cover.
+
+---
+
+### Card 145: How does the Council of Trent (Session V, canon 5) refute Luther's identification of concupiscence with sin (Simul Iustus et Peccator)?
+- **Front:** How does the Council of Trent (Session V, canon 5) refute Luther's identification of concupiscence with sin (Simul Iustus et Peccator)?
+- **Back:** Luther equated post-baptismal concupiscence (<i>fomes peccati</i>) with sin itself, concluding that Baptism leaves guilt intact (<i>simul iustus et peccator</i>).<br><br><b>Catholic Dogma (Trent V, 5):</b> Baptism truly erases everything having the proper nature of sin, infusing sanctifying grace. Remaining concupiscence is called 'sin' only analogically because it <b>comes from sin and inclines to sin</b> (<i>ex peccato est et ad peccatum inclinat</i>); resisted by grace, it is not sin, but an arena for virtuous combat.
+- 🧠 **Mnemonic:** <b>Temptation is Not Consent:</b> The embers (<i>fomes</i>) remain for battle, but the fire of guilt is extinguished.
+
+---
+
+### Card 146: Explain St. Augustine's maxim endorsed by Trent (Session VI, ch. 16) on Catholic merit: 'Cum Deus coronat merita nostra...'
+- **Front:** Explain St. Augustine's maxim endorsed by Trent (Session VI, ch. 16) on Catholic merit: 'Cum Deus coronat merita nostra...'
+- **Back:** <i>'Cum Deus coronat merita nostra, nihil aliud coronat quam dona sua'</i> ('When God crowns our merits, He crowns nothing other than His own gifts').<br><br>Between Creator and creature, strict commercial debt is impossible (ST I-II, q. 114, a. 1). Merit exists solely because God freely promised to reward what His own grace produces in His children (<i>ordinatio divina</i>). Thus, merit is not a bribe, but the filial growth of charity and capacity to enjoy God (<i>frui Deo</i>).
+- 🧠 **Mnemonic:** <b>Father Buying the Paint:</b> A father gives his child paper and paints, guides his hand, and then proudly rewards the drawing.
+
+---
+
+### Card 147: What are the four necessary conditions for a human act to possess supernatural merit before God (ST I-II, q. 114, aa. 2-4)?
+- **Front:** What are the four necessary conditions for a human act to possess supernatural merit before God (ST I-II, q. 114, aa. 2-4)?
+- **Back:** 1. <b>Divine Ordination (<i>Ordinatio Divina</i>):</b> God's free promise associating man with His grace;<br>2. <b>State of Grace & Charity:</b> Union with Christ the Vine (Jn 15:5: <i>'Apart from me you can do nothing'</i>);<br>3. <b>Free Deliberate Act in <i>Status Viae</i>:</b> Performed freely during earthly pilgrimage prior to death;<br>4. <b>Right Intention / Offering:</b> Directed to God in charity (fostered daily by the Morning Offering uniting work to Christ's priesthood).
+- 🧠 **Mnemonic:** <b>P-G-F-O:</b> <b>P</b>romise of God, <b>G</b>race/Charity, <b>F</b>ree pilgrim act, <b>O</b>ffering in Christ.
+
+---
+
+### Card 148: Distinguish precisely between Meritum de Condigno and Meritum de Congruo (ST I-II, q. 114, a. 3).
+- **Front:** Distinguish precisely between Meritum de Condigno and Meritum de Congruo (ST I-II, q. 114, a. 3).
+- **Back:** 1. <b>Meritum de Condigno (Condign Merit):</b> Merit in the strict sense, grounded in a proportional equality of justice conferred not by human strength, but by the <b>dignity of Christ's grace and the Holy Spirit</b> indwelling the soul. Merits an increase of grace and eternal glory.<br>2. <b>Meritum de Congruo (Congruous / Fitting Merit):</b> Merit in a broader sense, resting upon <b>divine friendship and generosity</b> rather than strict proportion (e.g. a mother meriting through prayer the conversion of a sinner, like St Monica for St Augustine).
+- 🧠 **Mnemonic:** <b>Proportion vs. Friendship:</b> <i>Condigno</i> relies on Christ's proportion within you (for your glory); <i>Congruo</i> appeals to God's generous friendship (for others).
+
+---
+
+### Card 149: Can any person merit First Justification (prima gratia) for himself de condigno (ST I-II, q. 114, a. 5)?
+- **Front:** Can any person merit First Justification (prima gratia) for himself de condigno (ST I-II, q. 114, a. 5)?
+- **Back:** <b>No.</b> First justification cannot be merited <i>de condigno</i> by anyone prior to grace, because merit itself presupposes the state of grace and union with Christ (the effect cannot precede its own cause).<br><br>A sinner's prayer or repentance under actual grace disposes him fittingly for mercy, yet initial justification remains purely an unmerited, gratuitous gift of God's mercy.
+- 🧠 **Mnemonic:** <b>You Cannot Earn the Starting Line:</b> A branch must first be grafted into the Vine before it can bear meritorious fruit.
+
+---
+
+### Card 150: What is the Christological foundation of all Christian merit?
+- **Front:** What is the Christological foundation of all Christian merit?
+- **Back:** Our actions possess zero meritorious value if isolated from Jesus Christ. Because Christ's humanity is the supreme instrument of the Trinity (<i>organum divinitatis</i>), He alone merited our salvation <i>de condigno</i> in the absolute sense.<br><br>Through Baptism and charity, Christians are grafted into Christ's Mystical Body; thus, our daily labour, prayer, and suffering become living participations in Christ's own priestly and redemptive mediation.
+- 🧠 **Mnemonic:** <b>Grafted into the Vine:</b> Human sap has no eternal worth unless flowing from Christ the Root.
+
+---
